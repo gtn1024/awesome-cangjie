@@ -7,6 +7,7 @@ A curated list of awesome Cangjie frameworks, libraries, software and resources.
 - [Projects](#projects)
   - [Configuration](#configuration)
   - [Database](#database)
+  - [Job Scheduling](#job-scheduling)
   - [Security](#security)
 - [Resources](#resources)
 - [Contributing](#contributing)
@@ -26,6 +27,10 @@ A curated list of awesome Cangjie frameworks, libraries, software and resources.
 
 - [opengauss-driver](https://gitcode.com/Cangjie-TPC/opengauss-driver): openGauss and PostgreSQL client driver.
 - [redis-sdk](https://gitcode.com/Cangjie-TPC/redis-sdk): Redis client SDK implemented by Cangjie language. Compatible with [Jedis](https://github.com/redis/jedis) API. Support RESP2 and RESP3 protocol.
+
+### Job Scheduling
+
+- [quartz4cj](https://gitcode.com/Cangjie-TPC/quartz4cj): A feature-rich, open-source job scheduling library.
 
 ### Security
 
