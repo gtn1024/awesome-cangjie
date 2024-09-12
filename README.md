@@ -15,8 +15,9 @@ A curated list of awesome Cangjie frameworks, libraries, software and resources.
 
 ### Configuration
 
-- [ini4cj](https://gitcode.com/Cangjie-TPC/ini4cj): INI file parser
-- [toml4cj](https://gitcode.com/Cangjie-TPC/toml4cj): TOML format parsing
+- [CJson](https://gitcode.com/Cangjie-TPC/CJson): JSON serialization/deserialization tools.
+- [ini4cj](https://gitcode.com/Cangjie-TPC/ini4cj): INI file parser.
+- [toml4cj](https://gitcode.com/Cangjie-TPC/toml4cj): TOML format parsing.
 - [xmlstream](https://gitcode.com/Cangjie-TPC/xml_stream): The XML serialization deserialization library provides an STAX-style interface related to XML operations, conforms to the XML 1.0 specification, and supports namespaces.
 - [xml-ffi](https://gitcode.com/Cangjie-TPC/xml-ffi): XML format parsing library that supports XML DOM and XML SAX parsing modes.
 - [yaml4cj](https://gitcode.com/Cangjie-TPC/yaml4cj): Parse and generate YAML data quickly and reliably, supporting most of the content of YAML 1.1 and 1.2.
