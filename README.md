@@ -8,6 +8,7 @@ A curated list of awesome Cangjie frameworks, libraries, software and resources.
   - [Configuration](#configuration)
   - [Database](#database)
   - [Job Scheduling](#job-scheduling)
+  - [Miscellaneous](#miscellaneous)
   - [Security](#security)
 - [Resources](#resources)
 - [Contributing](#contributing)
@@ -31,6 +32,10 @@ A curated list of awesome Cangjie frameworks, libraries, software and resources.
 ### Job Scheduling
 
 - [quartz4cj](https://gitcode.com/Cangjie-TPC/quartz4cj): A feature-rich, open-source job scheduling library.
+
+### Miscellaneous
+
+- [snowflake4cj](https://github.com/gtn1024/snowflake4cj): Snowflake algorithm for Cangjie.
 
 ### Security
 
