@@ -36,6 +36,7 @@ A curated list of awesome Cangjie frameworks, libraries, software and resources.
 ### Miscellaneous
 
 - [snowflake4cj](https://github.com/gtn1024/snowflake4cj): Snowflake algorithm for Cangjie.
+- [cjdotenv](https://github.com/gtn1024/cjdotenv): A Cangjie library to load environment variables from `.env`.
 
 ### Security
 
@@ -44,6 +45,7 @@ A curated list of awesome Cangjie frameworks, libraries, software and resources.
 ## Resources
 
 - [Cangjie Official Website (Chinese)](https://developer.huawei.com/consumer/cn/cangjie/)
+- [Cangjie Playground](https://playground.cj.zxilly.dev): [Cangjie playground](https://github.com/Zxilly/playground-cj)
 
 ## Contributing
 
