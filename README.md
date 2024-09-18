@@ -45,7 +45,7 @@ A curated list of awesome Cangjie frameworks, libraries, software and resources.
 ## Resources
 
 - [Cangjie Official Website (Chinese)](https://developer.huawei.com/consumer/cn/cangjie/)
-- [Cangjie Playground](https://playground.cj.zxilly.dev): [Cangjie playground](https://github.com/Zxilly/playground-cj)
+- [Cangjie Playground](https://playground.cj.zxilly.dev): [Run cangjie code online](https://github.com/Zxilly/playground-cj)
 
 ## Contributing
 
