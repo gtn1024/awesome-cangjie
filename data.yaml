@@ -1,0 +1,25 @@
+categories:
+- slug: miscellaneous
+  i18n:
+  - name:
+    - en: Miscellaneous
+      zh-hans: 杂项
+  - description:
+    - en: Everything else.
+      zh-hans: 其他所有内容
+
+projects:
+- project: cjdotenv
+  category: miscellaneous
+  repository: https://github.com/gtn1024/cjdotenv
+  i18n:
+  - description:
+    - en: A Cangjie library to load environment variables from `.env`.
+      zh-hans: 用于从 `.env` 文件中加载环境变量的仓颉库。
+- project: snowflake4cj
+  category: miscellaneous
+  repository: https://github.com/gtn1024/snowflake4cj
+  i18n:
+  - description:
+    - en: Snowflake algorithm for Cangjie.
+      zh-hans: 仓颉的雪花算法库。
