@@ -42,6 +42,7 @@ A curated list of awesome Cangjie frameworks, libraries, software and resources.
 
 ### Distributed Systems
 
+- [Dapr Cangjie SDK](https://gitcode.com/PermissionDog/dapr-cangjie-sdk) - Cangjie-language implementation of the Dapr SDK.
 - [mqtt4cj](https://gitcode.com/Cangjie-TPC/mqtt4cj) - An MQTT message queue telemetry transport protocol library.
 - [s3-sdk](https://gitcode.com/Cangjie-TPC/s3-sdk) - AWS S3 client SDK implementation for Cangjie.
 
