@@ -58,6 +58,7 @@ A curated list of awesome Cangjie frameworks, libraries, software and resources.
 ### Logging
 
 - [log-cj](https://gitcode.com/Cangjie-TPC/log-cj) - A log management framework.
+- [seq4cj](https://gitcode.com/PermissionDog/seq4cj) - A seq log client implementation for the Cangjie language standard library log.Logger.
 
 ### Miscellaneous
 
