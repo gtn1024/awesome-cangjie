@@ -87,6 +87,7 @@ A curated list of awesome Cangjie frameworks, libraries, software and resources.
 
 - [easyapi](https://gitcode.com/OpenCangjieCommunity/easyapi) - Lightweight Http service framework.
 - [soulsoft web collection](https://gitcode.com/soulsoft) - Dedicated to leveraging the Cangjie language to efficiently build ASP.NET Core components, AI solutions, identity authentication (OIDC), and cloud-native architectures, creating high-performance, scalable, and secure modern Cangjie applications.
+- [tea](https://gitcode.com/yishengTH/tea) - Lightweight, functional, and efficient HTTP web framework.
 
 ## Resources
 
