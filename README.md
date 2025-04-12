@@ -67,6 +67,7 @@ A curated list of awesome Cangjie frameworks, libraries, software and resources.
 - [charset4cj](https://gitcode.com/Cangjie-TPC/charset4cj) - Common character encoding collection library.
 - [cjdotenv](https://github.com/gtn1024/cjdotenv) - A Cangjie library to load environment variables from `.env`.
 - [cjxe](https://github.com/gtn1024/cjxe) - A fast command line argument parser for Cangjie.
+- [derive_macros](https://gitcode.com/OpenCangjieCommunity/derive_macros): Derive macros for Cangjie.
 - [snowflake4cj](https://github.com/gtn1024/snowflake4cj) - Snowflake algorithm for Cangjie.
 
 ### Networking
