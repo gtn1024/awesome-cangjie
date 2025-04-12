@@ -85,6 +85,7 @@ A curated list of awesome Cangjie frameworks, libraries, software and resources.
 ### Science and Data Analysis
 
 - [matrix4cj](https://gitcode.com/Cangjie-TPC/matrix4cj) - Linear algebra library for constructing and manipulating dense matrices.
+- [stats4cj](https://gitcode.com/Chemxy/stats4cj) - A mathematical statistics library implemented by Cangjie.
 
 ### Security
 
