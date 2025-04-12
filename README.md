@@ -48,6 +48,7 @@ A curated list of awesome Cangjie frameworks, libraries, software and resources.
 
 ### Editor / IDE
 
+- [Cangjie-language-Neovim](https://github.com/shiro-42/Cangjie-language-Neovim) - Simple syntax highlighting for Neovim.
 - [CodeArts IDE for Cangjie](https://devcloud.cn-north-4.huaweicloud.com/codeartside/home?product=cangjie)
 - [intellij-cangjie](https://gitcode.com/OpenCangjieCommunity/intellij-cangjie) - Cangjie plugin for IntelliJ IDEA.
 
