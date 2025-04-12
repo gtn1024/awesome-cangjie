@@ -28,6 +28,7 @@ A curated list of awesome Cangjie frameworks, libraries, software and resources.
 
 ### Configuration
 
+- [cangjie_toml](https://gitcode.com/PermissionDog/cangjie_toml) - A TOML parser for Cangjie.
 - [cjjson](https://gitcode.com/Cangjie-TPC/cangjieJSON) - Cangjie JSON serialization/deserialization library.
 - [CJson](https://gitcode.com/Cangjie-TPC/CJson) - JSON serialization/deserialization tools.
 - [ini4cj](https://gitcode.com/Cangjie-TPC/ini4cj) - INI file parser.
