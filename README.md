@@ -70,6 +70,7 @@ A curated list of awesome Cangjie frameworks, libraries, software and resources.
 - [cjdotenv](https://github.com/gtn1024/cjdotenv) - A Cangjie library to load environment variables from `.env`.
 - [cjxe](https://github.com/gtn1024/cjxe) - A fast command line argument parser for Cangjie.
 - [derive_macros](https://gitcode.com/OpenCangjieCommunity/derive_macros): Derive macros for Cangjie.
+- [is_png_cj](https://gitcode.com/PermissionDog/is-png-cj) - Detect if a file is a PNG image.
 - [snowflake4cj](https://github.com/gtn1024/snowflake4cj) - Snowflake algorithm for Cangjie.
 
 ### Networking
