@@ -79,6 +79,7 @@ A curated list of awesome Cangjie frameworks, libraries, software and resources.
 
 #### HTTP Client
 
+- [ginger](https://gitcode.com/Chemxy/ginger) - Lightweight HTTP client, supports intercepting requests and responses.
 - [httpclient4cj](https://gitcode.com/Cangjie-TPC/httpclient4cj) - An efficient HTTP client.
 
 ### Science and Data Analysis
