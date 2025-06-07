@@ -9,6 +9,7 @@ A curated list of awesome Cangjie frameworks, libraries, software and resources.
   - [Configuration](#configuration)
   - [Database](#database)
   - [Distributed Systems](#distributed-systems)
+  - [eBPF](#ebpf)
   - [Editor / IDE](#editor--ide)
   - [Job Scheduling](#job-scheduling)
   - [Logging](#logging)
@@ -48,6 +49,10 @@ A curated list of awesome Cangjie frameworks, libraries, software and resources.
 - [Dapr Cangjie SDK](https://gitcode.com/PermissionDog/dapr-cangjie-sdk) - Cangjie-language implementation of the Dapr SDK.
 - [mqtt4cj](https://gitcode.com/Cangjie-TPC/mqtt4cj) - An MQTT message queue telemetry transport protocol library.
 - [s3-sdk](https://gitcode.com/Cangjie-TPC/s3-sdk) - AWS S3 client SDK implementation for Cangjie.
+
+### eBPF
+
+- [cangjie_libbpf](https://gitcode.com/hevienz/cangjie_libbpf) - Cangjie libbpf bindings.
 
 ### Editor / IDE
 
