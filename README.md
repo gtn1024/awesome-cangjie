@@ -121,6 +121,7 @@
 ### Web
 
 - [easyapi](https://gitcode.com/OpenCangjieCommunity/easyapi) - 轻量级 Http 服务框架。
+- [fountain](https://gitcode.com/Cangjie-SIG/fountain) - 一个用于服务器应用开发的综合工具库。
 - [spire](https://gitcode.com/soulsoft/spire) - Spire (天擎) 一个基于仓颉语言开发、借鉴 ASP.NET Core 设计哲学的现代化 Web 框架。我们与仓颉官方团队共同研发，致力于打造轻量级、高性能、可扩展的应用开发体验。
 - [tea](https://gitcode.com/yishengTH/tea) - 轻量级、函数式、高效的 HTTP Web 框架。
 
