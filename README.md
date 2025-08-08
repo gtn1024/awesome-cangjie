@@ -97,6 +97,7 @@
 - [filetype4cj](https://gitcode.com/Cangjie-SIG/filetype4cj) - 通过检查魔数签名推断文件和 MIME 类型。
 - [is_png_cj](https://gitcode.com/PermissionDog/is-png-cj) - 检测文件是否为 PNG 图像。
 - [snowflake4cj](https://github.com/gtn1024/snowflake4cj) - 仓颉的 Snowflake 算法实现。
+- [terminalcolor](https://gitcode.com/Cangjie-SIG/terminalcolor) - 符合直觉的终端颜色库，看一眼就会使用。
 
 ### Networking
 
