@@ -13,6 +13,7 @@
   - [Distributed Systems](#distributed-systems)
   - [eBPF](#ebpf)
   - [Editor / IDE](#editor--ide)
+  - [GUI](#gui)
   - [Job Scheduling](#job-scheduling)
   - [Logging](#logging)
   - [Miscellaneous](#miscellaneous)
@@ -73,6 +74,10 @@
 - [Cangjie-language-Neovim](https://github.com/shiro-42/Cangjie-language-Neovim) - Neovim 的简单语法高亮。
 - [CodeArts IDE for Cangjie](https://devcloud.cn-north-4.huaweicloud.com/codeartside/home?product=cangjie)
 - [intellij-cangjie](https://gitcode.com/OpenCangjieCommunity/intellij-cangjie) - IntelliJ IDEA 的仓颉插件。
+
+### GUI
+
+- [webview-sdk](https://gitcode.com/service/webview-sdk) - 仓颉语言绑定webview； 可以使用任何 web 技术开发你的桌面程序。
 
 ### Job Scheduling
 
