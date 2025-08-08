@@ -5,6 +5,7 @@
 ## Contents
 
 - [Projects](#projects)
+  - [仓颉开源](#仓颉开源)
   - [AI](#ai)
   - [Configuration](#configuration)
   - [Database](#database)
@@ -22,6 +23,14 @@
 - [Resources](#resources)
 
 ## Projects
+
+### 仓颉开源
+
+- [仓颉编译器](https://gitcode.com/Cangjie/cangjie_compiler) - 仓颉编译器源码及 cjdb 调试工具。
+- [仓颉运行时](https://gitcode.com/Cangjie/cangjie_runtime) - 仓颉编程语言运行时与标准库。
+- [仓颉扩展库](https://gitcode.com/Cangjie/cangjie_stdx) - 仓颉编程语言提供了 stdx 模块，该模块提供了网络、安全等领域的通用能力。
+- [仓颉命令行工具](https://gitcode.com/Cangjie/cangjie_tools) - 仓颉编程语言命令行工具，包括仓颉包管理工具、仓颉格式化工具、仓颉多语言桥接工具及仓颉语言服务。
+- [仓颉测试](https://gitcode.com/Cangjie/cangjie_test) - 仓颉编程语言测试用例。
 
 ### AI
 
