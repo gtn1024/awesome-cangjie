@@ -7,6 +7,7 @@
 - [Projects](#projects)
   - [仓颉开源](#仓颉开源)
   - [AI](#ai)
+  - [Collection](#collection)
   - [Configuration](#configuration)
   - [Database](#database)
   - [Distributed Systems](#distributed-systems)
@@ -35,6 +36,10 @@
 ### AI
 
 - [CangjieMagic](https://gitcode.com/Cangjie-TPC/CangjieMagic) - LLM Agent 开发框架基于仓颉编程语言构建，主要特性包括：Agent DSL、支持MCP协议、支持模块化调用、支持智能任务规划。
+
+### Collection
+
+- [deque4cj](https://gitcode.com/SIGCANGJIE/deque4cj) - deque4cj是一个用 Cangjie 语言实现的高效双端队列（Deque）库，支持灵活的元素插入、删除和动态容量管理。
 
 ### Configuration
 
@@ -84,6 +89,7 @@
 - [cjdotenv](https://github.com/gtn1024/cjdotenv) - 仓颉库用于从 `.env` 加载环境变量。
 - [cjxe](https://github.com/gtn1024/cjxe) - 仓颉的快速命令行参数解析器。
 - [derive_macros](https://gitcode.com/OpenCangjieCommunity/derive_macros): 为仓颉导出宏。
+- [filetype4cj](https://gitcode.com/Cangjie-SIG/filetype4cj) - 通过检查魔数签名推断文件和 MIME 类型。
 - [is_png_cj](https://gitcode.com/PermissionDog/is-png-cj) - 检测文件是否为 PNG 图像。
 - [snowflake4cj](https://github.com/gtn1024/snowflake4cj) - 仓颉的 Snowflake 算法实现。
 
