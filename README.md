@@ -58,6 +58,7 @@
 - [mysqlclient4cj](https://gitcode.com/Cangjie-SIG/mysql-driver) - 仓颉原生 MySQL 客户端驱动，支持 TIDB、OceanBase 等。
 - [opengauss-driver](https://gitcode.com/Cangjie-TPC/opengauss-driver) - openGauss 和 PostgreSQL 客户端驱动。
 - [redis-sdk](https://gitcode.com/Cangjie-TPC/redis-sdk) - Redis 客户端 SDK，由仓颉语言实现。兼容 [Jedis](https://github.com/redis/jedis) API。支持 RESP2 和 RESP3 协议。
+- [sqlsharp](https://gitcode.com/soulsoft/sqlsharp) - 一款灵感来自 C# 的 ADO.NET + Dapper 设计的 ORM
 
 ### Distributed Systems
 
