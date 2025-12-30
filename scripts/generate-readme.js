@@ -1,6 +1,6 @@
-import fs from 'fs'
-import path from 'path'
-import { fileURLToPath } from 'url'
+import fs from 'node:fs'
+import path from 'node:path'
+import { fileURLToPath } from 'node:url'
 import yaml from 'js-yaml'
 
 const __filename = fileURLToPath(import.meta.url)
@@ -22,8 +22,8 @@ try {
   // 生成英文 README
   const enContent = generateReadme(data, 'en')
   fs.writeFileSync(readmeEnPath, enContent, 'utf8')
-
-} catch (error) {
+}
+catch (error) {
   console.error('生成失败:', error)
   process.exit(1)
 }
@@ -64,7 +64,8 @@ function generateReadme(data, lang) {
   // 按分类组织项目
   for (const cat of categories) {
     const catProjects = projects.filter(p => p.category === cat.id)
-    if (catProjects.length === 0) continue
+    if (catProjects.length === 0)
+      continue
 
     const catName = cat.name[lang]
     const catDesc = cat.description[lang]
@@ -93,7 +94,8 @@ function generateReadme(data, lang) {
   if (lang === 'zh') {
     resourcesSection += '- [仓颉官网](https://cangjie-lang.cn/)\n'
     resourcesSection += '- [仓颉操练场](https://playground.cj.zxilly.dev) - [在线运行仓颉代码](https://github.com/Zxilly/playground-cj)\n'
-  } else {
+  }
+  else {
     resourcesSection += '- [Cangjie Official Website](https://cangjie-lang.cn/)\n'
     resourcesSection += '- [Cangjie Playground](https://playground.cj.zxilly.dev) - [Run cangjie code online](https://github.com/Zxilly/playground-cj)\n'
   }

@@ -1,11 +1,12 @@
 <script setup lang="ts">
-import { inject, type Ref } from 'vue'
+import type { Ref } from 'vue'
+import { inject } from 'vue'
 
 interface Category {
   id: string
-  name: { zh: string; en: string }
+  name: { zh: string, en: string }
   icon: string
-  description: { zh: string; en: string }
+  description: { zh: string, en: string }
 }
 
 defineProps<{
@@ -16,7 +17,7 @@ defineProps<{
 const selectedCategory = defineModel<string>()
 const locale = inject<Ref<'zh' | 'en'>>('locale')
 
-const getText = (obj: { zh: string; en: string }) => {
+function getText(obj: { zh: string, en: string }) {
   return locale?.value === 'zh' ? obj.zh : obj.en
 }
 </script>
@@ -24,13 +25,12 @@ const getText = (obj: { zh: string; en: string }) => {
 <template>
   <div class="flex flex-wrap gap-2">
     <button
-      @click="selectedCategory = 'all'"
-      :class="[
-        'px-4 py-2 rounded-lg border-2 transition-all duration-300',
+      class="px-4 py-2 rounded-lg border-2 transition-all duration-300" :class="[
         selectedCategory === 'all'
           ? 'border-cyan-500 bg-gradient-to-r from-cyan-50 to-blue-50 dark:from-cyan-900/30 dark:to-blue-900/30 text-cyan-700 dark:text-cyan-300'
-          : 'border-gray-200 dark:border-dark-border hover:border-cyan-300 dark:hover:border-cyan-700'
+          : 'border-gray-200 dark:border-dark-border hover:border-cyan-300 dark:hover:border-cyan-700',
       ]"
+      @click="selectedCategory = 'all'"
     >
       {{ locale === 'zh' ? '全部' : 'All' }}
       <span class="ml-1 px-2 py-0.5 rounded-full bg-gray-200 dark:bg-gray-700 text-xs">
@@ -41,13 +41,12 @@ const getText = (obj: { zh: string; en: string }) => {
     <button
       v-for="category in categories"
       :key="category.id"
-      @click="selectedCategory = category.id"
-      :class="[
-        'px-4 py-2 rounded-lg border-2 transition-all duration-300',
+      class="px-4 py-2 rounded-lg border-2 transition-all duration-300" :class="[
         selectedCategory === category.id
           ? 'border-cyan-500 bg-gradient-to-r from-cyan-50 to-blue-50 dark:from-cyan-900/30 dark:to-blue-900/30 text-cyan-700 dark:text-cyan-300'
-          : 'border-gray-200 dark:border-dark-border hover:border-cyan-300 dark:hover:border-cyan-700'
+          : 'border-gray-200 dark:border-dark-border hover:border-cyan-300 dark:hover:border-cyan-700',
       ]"
+      @click="selectedCategory = category.id"
     >
       <span class="mr-1">{{ category.icon }}</span>
       {{ getText(category.name) }}

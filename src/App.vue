@@ -1,26 +1,27 @@
 <script setup lang="ts">
+import { onMounted, provide, ref } from 'vue'
 import { RouterView } from 'vue-router'
-import { ref, onMounted, provide } from 'vue'
 
 const isDark = ref(false)
 const locale = ref<'zh' | 'en'>('zh')
 
-const toggleDarkMode = () => {
+function toggleDarkMode() {
   isDark.value = !isDark.value
   if (isDark.value) {
     document.documentElement.classList.add('dark')
-  } else {
+  }
+  else {
     document.documentElement.classList.remove('dark')
   }
   localStorage.setItem('darkMode', String(isDark.value))
 }
 
-const setLocale = (lang: 'zh' | 'en') => {
+function setLocale(lang: 'zh' | 'en') {
   locale.value = lang
   localStorage.setItem('locale', lang)
 }
 
-const t = (zh: string, en: string) => {
+function t(zh: string, en: string) {
   return locale.value === 'zh' ? zh : en
 }
 
@@ -48,31 +49,32 @@ onMounted(() => {
       <div class="container mx-auto px-4 py-4">
         <div class="flex items-center justify-between">
           <div class="flex items-center space-x-3">
-            <div class="text-4xl animate-float">🎯</div>
+            <div class="text-4xl animate-float">
+              🎯
+            </div>
             <div>
-              <h1 class="text-2xl font-bold gradient-text">Awesome Cangjie</h1>
+              <h1 class="text-2xl font-bold gradient-text">
+                Awesome Cangjie
+              </h1>
               <p class="text-sm text-gray-600 dark:text-gray-400">
                 {{ t('精选的仓颉框架、库和资源', 'Curated list of Cangjie frameworks, libraries, and resources') }}
               </p>
             </div>
           </div>
           <nav class="hidden md:flex items-center space-x-6">
-            <a href="https://cangjie-lang.cn/" target="_blank" rel="noopener noreferrer" class="text-gray-600 dark:text-gray-400 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors">
-              {{ t('官方网站', 'Official Website') }}
-            </a>
             <a href="https://github.com/gtn1024/awesome-cangjie" target="_blank" rel="noopener noreferrer" class="text-gray-600 dark:text-gray-400 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors">
               GitHub
             </a>
             <button
-              @click="setLocale(locale === 'zh' ? 'en' : 'zh')"
               class="px-3 py-2 rounded-lg bg-gray-100 dark:bg-dark-surface hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors text-sm font-medium"
               :class="locale === 'zh' ? 'text-cyan-600 dark:text-cyan-400' : 'text-blue-600 dark:text-blue-400'"
+              @click="setLocale(locale === 'zh' ? 'en' : 'zh')"
             >
               {{ locale === 'zh' ? '中文' : 'English' }}
             </button>
             <button
-              @click="toggleDarkMode"
               class="p-2 rounded-lg bg-gray-100 dark:bg-dark-surface hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+              @click="toggleDarkMode"
             >
               <span v-if="isDark" class="text-xl">☀️</span>
               <span v-else class="text-xl">🌙</span>

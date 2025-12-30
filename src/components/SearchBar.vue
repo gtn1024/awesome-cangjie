@@ -1,9 +1,9 @@
 <script setup lang="ts">
-const searchQuery = defineModel<string>()
-
 defineProps<{
   placeholder?: string
 }>()
+
+const searchQuery = defineModel<string>()
 </script>
 
 <template>
@@ -13,7 +13,7 @@ defineProps<{
       type="text"
       :placeholder="placeholder || '搜索项目名称、描述或标签...'"
       class="input pl-12 pr-4 py-3 text-lg"
-    />
+    >
     <svg
       class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400"
       fill="none"

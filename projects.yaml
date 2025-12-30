@@ -201,7 +201,7 @@ projects:
     url: https://gitcode.com/Cangjie-TPC/CangjieMagic
     description:
       zh: LLM Agent 开发框架基于仓颉编程语言构建，主要特性包括：Agent DSL、支持MCP协议、支持模块化调用、支持智能任务规划。
-      en: "LLM Agent development framework built with Cangjie. Main features: Agent DSL, MCP protocol support, modular invocation, intelligent task planning."
+      en: 'LLM Agent development framework built with Cangjie. Main features: Agent DSL, MCP protocol support, modular invocation, intelligent task planning.'
     tags: [ai, agent, llp, mcp]
 
   - name:

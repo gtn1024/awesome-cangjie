@@ -1,21 +1,23 @@
 <script setup lang="ts">
-import { ref, computed, onMounted, inject, type Ref } from 'vue'
-import ProjectCard from '../components/ProjectCard.vue'
+import type { Ref } from 'vue'
+import { computed, inject, onMounted, ref } from 'vue'
+import Busuanzi from '../components/Busuanzi.vue'
 import CategoryFilter from '../components/CategoryFilter.vue'
+import ProjectCard from '../components/ProjectCard.vue'
 import SearchBar from '../components/SearchBar.vue'
 
 interface Category {
   id: string
-  name: { zh: string; en: string }
+  name: { zh: string, en: string }
   icon: string
-  description: { zh: string; en: string }
+  description: { zh: string, en: string }
 }
 
 interface Project {
-  name: { zh: string; en: string }
+  name: { zh: string, en: string }
   category: string
   url: string
-  description: { zh: string; en: string }
+  description: { zh: string, en: string }
   tags: string[]
 }
 
@@ -36,8 +38,9 @@ onMounted(async () => {
   data.value = await response.json()
 })
 
-const getText = (obj: { zh: string; en: string } | string) => {
-  if (typeof obj === 'string') return obj
+function getText(obj: { zh: string, en: string } | string) {
+  if (typeof obj === 'string')
+    return obj
   return locale?.value === 'zh' ? obj.zh : obj.en
 }
 
@@ -52,7 +55,7 @@ const filteredProjects = computed(() => {
   // 按搜索词筛选
   if (searchQuery.value) {
     const query = searchQuery.value.toLowerCase()
-    projects = projects.filter(p => {
+    projects = projects.filter((p) => {
       const name = getText(p.name).toLowerCase()
       const desc = getText(p.description).toLowerCase()
       const tags = p.tags.join(' ').toLowerCase()
@@ -66,7 +69,7 @@ const filteredProjects = computed(() => {
 
 const categoryStats = computed(() => {
   const stats = new Map<string, number>()
-  data.value.projects.forEach(project => {
+  data.value.projects.forEach((project) => {
     stats.set(project.category, (stats.get(project.category) || 0) + 1)
   })
   return stats
@@ -85,28 +88,40 @@ const categoryStats = computed(() => {
       </p>
     </section>
 
+    <div class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-center mb-8">
+      <Busuanzi />
+    </div>
+
     <!-- Stats -->
     <section class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
       <div class="card p-6 text-center">
-        <div class="text-3xl font-bold gradient-text">{{ data.projects.length }}</div>
+        <div class="text-3xl font-bold gradient-text">
+          {{ data.projects.length }}
+        </div>
         <div class="text-sm text-gray-600 dark:text-gray-400 mt-1">
           {{ t('项目', 'Projects') }}
         </div>
       </div>
       <div class="card p-6 text-center">
-        <div class="text-3xl font-bold gradient-text">{{ data.categories.length }}</div>
+        <div class="text-3xl font-bold gradient-text">
+          {{ data.categories.length }}
+        </div>
         <div class="text-sm text-gray-600 dark:text-gray-400 mt-1">
           {{ t('分类', 'Categories') }}
         </div>
       </div>
       <div class="card p-6 text-center">
-        <div class="text-3xl font-bold gradient-text">Open Source</div>
+        <div class="text-3xl font-bold gradient-text">
+          Open Source
+        </div>
         <div class="text-sm text-gray-600 dark:text-gray-400 mt-1">
           {{ t('开源社区', 'Community') }}
         </div>
       </div>
       <div class="card p-6 text-center">
-        <div class="text-3xl font-bold gradient-text">Growing</div>
+        <div class="text-3xl font-bold gradient-text">
+          Growing
+        </div>
         <div class="text-sm text-gray-600 dark:text-gray-400 mt-1">
           {{ t('持续增长', 'Growing') }}
         </div>
@@ -143,7 +158,9 @@ const categoryStats = computed(() => {
       </div>
 
       <div v-if="filteredProjects.length === 0" class="text-center py-12">
-        <div class="text-6xl mb-4">🔍</div>
+        <div class="text-6xl mb-4">
+          🔍
+        </div>
         <p class="text-gray-500 dark:text-gray-400">
           {{ t('未找到匹配的项目', 'No matching projects found') }}
         </p>

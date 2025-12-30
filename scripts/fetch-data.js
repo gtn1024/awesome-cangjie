@@ -1,6 +1,6 @@
-import fs from 'fs'
-import path from 'path'
-import { fileURLToPath } from 'url'
+import fs from 'node:fs'
+import path from 'node:path'
+import { fileURLToPath } from 'node:url'
 import yaml from 'js-yaml'
 
 const __filename = fileURLToPath(import.meta.url)
@@ -22,7 +22,8 @@ try {
 
   // 写入 JSON 文件
   fs.writeFileSync(jsonPath, JSON.stringify(data, null, 2), 'utf8')
-} catch (error) {
+}
+catch (error) {
   console.error('转换失败:', error)
   process.exit(1)
 }

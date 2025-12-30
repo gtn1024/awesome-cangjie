@@ -1,18 +1,19 @@
 <script setup lang="ts">
-import { inject, type Ref } from 'vue'
+import type { Ref } from 'vue'
+import { inject } from 'vue'
 
 interface Category {
   id: string
-  name: { zh: string; en: string }
+  name: { zh: string, en: string }
   icon: string
-  description: { zh: string; en: string }
+  description: { zh: string, en: string }
 }
 
 interface Project {
-  name: { zh: string; en: string }
+  name: { zh: string, en: string }
   category: string
   url: string
-  description: { zh: string; en: string }
+  description: { zh: string, en: string }
   tags: string[]
 }
 
@@ -24,7 +25,7 @@ defineProps<{
 const locale = inject<Ref<'zh' | 'en'>>('locale')
 const t = inject<(zh: string, en: string) => string>('t')!
 
-const getText = (obj: { zh: string; en: string }) => {
+function getText(obj: { zh: string, en: string }) {
   return locale?.value === 'zh' ? obj.zh : obj.en
 }
 </script>
