@@ -2,23 +2,26 @@
 
 精选的仓颉框架、库、软件和资源列表。
 
+[English](README-en.md) | 中文
+
+---
+
 ## Contents
 
 - [Projects](#projects)
-  - [仓颉开源](#仓颉开源)
+  - [仓颉开源](#)
   - [AI](#ai)
   - [Collection](#collection)
   - [Configuration](#configuration)
   - [Database](#database)
   - [Distributed Systems](#distributed-systems)
   - [eBPF](#ebpf)
-  - [Editor / IDE](#editor--ide)
+  - [Editor / IDE](#editor-ide)
   - [GUI](#gui)
   - [Job Scheduling](#job-scheduling)
   - [Logging](#logging)
   - [Miscellaneous](#miscellaneous)
   - [Networking](#networking)
-    - [HTTP Client](#http-client)
   - [Science and Data Analysis](#science-and-data-analysis)
   - [Security](#security)
   - [Web](#web)
@@ -28,11 +31,11 @@
 
 ### 仓颉开源
 
-- [仓颉编译器](https://gitcode.com/Cangjie/cangjie_compiler) - 仓颉编译器源码及 cjdb 调试工具。
-- [仓颉运行时](https://gitcode.com/Cangjie/cangjie_runtime) - 仓颉编程语言运行时与标准库。
-- [仓颉扩展库](https://gitcode.com/Cangjie/cangjie_stdx) - 仓颉编程语言提供了 stdx 模块，该模块提供了网络、安全等领域的通用能力。
-- [仓颉命令行工具](https://gitcode.com/Cangjie/cangjie_tools) - 仓颉编程语言命令行工具，包括仓颉包管理工具、仓颉格式化工具、仓颉多语言桥接工具及仓颉语言服务。
-- [仓颉测试](https://gitcode.com/Cangjie/cangjie_test) - 仓颉编程语言测试用例。
+- [仓颉编译器](https://gitcode.com/Cangjie/cangjie_compiler) *(Official)* - 仓颉编译器源码及 cjdb 调试工具。
+- [仓颉运行时](https://gitcode.com/Cangjie/cangjie_runtime) *(Official)* - 仓颉编程语言运行时与标准库。
+- [仓颉扩展库](https://gitcode.com/Cangjie/cangjie_stdx) *(Official)* - 仓颉编程语言提供了 stdx 模块，该模块提供了网络、安全等领域的通用能力。
+- [仓颉命令行工具](https://gitcode.com/Cangjie/cangjie_tools) *(Official)* - 仓颉编程语言命令行工具，包括仓颉包管理工具、仓颉格式化工具、仓颉多语言桥接工具及仓颉语言服务。
+- [仓颉测试](https://gitcode.com/Cangjie/cangjie_test) *(Official)* - 仓颉编程语言测试用例。
 
 ### AI
 
@@ -57,8 +60,8 @@
 
 - [mysqlclient4cj](https://gitcode.com/Cangjie-SIG/mysql-driver) - 仓颉原生 MySQL 客户端驱动，支持 TIDB、OceanBase 等。
 - [opengauss-driver](https://gitcode.com/Cangjie-TPC/opengauss-driver) - openGauss 和 PostgreSQL 客户端驱动。
-- [redis-sdk](https://gitcode.com/Cangjie-TPC/redis-sdk) - Redis 客户端 SDK，由仓颉语言实现。兼容 [Jedis](https://github.com/redis/jedis) API。支持 RESP2 和 RESP3 协议。
-- [sqlsharp](https://gitcode.com/soulsoft/sqlsharp) - 一款灵感来自 C# 的 ADO.NET + Dapper 设计的 ORM
+- [redis-sdk](https://gitcode.com/Cangjie-TPC/redis-sdk) - Redis 客户端 SDK，由仓颉语言实现。兼容 Jedis API。支持 RESP2 和 RESP3 协议。
+- [sqlsharp](https://gitcode.com/soulsoft/sqlsharp) - 一款灵感来自 C# 的 ADO.NET + Dapper 设计的 ORM。
 
 ### Distributed Systems
 
@@ -72,13 +75,13 @@
 
 ### Editor / IDE
 
-- [Cangjie-language-Neovim](https://github.com/shiro-42/Cangjie-language-Neovim) - Neovim 的简单语法高亮。
-- [CodeArts IDE for Cangjie](https://devcloud.cn-north-4.huaweicloud.com/codeartside/home?product=cangjie)
+- [CodeArts IDE for Cangjie](https://devcloud.cn-north-4.huaweicloud.com/codeartside/home?product=cangjie) *(Official)* - 华为云 CodeArts IDE for Cangjie。
 - [intellij-cangjie](https://gitcode.com/OpenCangjieCommunity/intellij-cangjie) - IntelliJ IDEA 的仓颉插件。
+- [Cangjie-language-Neovim](https://github.com/shiro-42/Cangjie-language-Neovim) - Neovim 的简单语法高亮。
 
 ### GUI
 
-- [webview-sdk](https://gitcode.com/service/webview-sdk) - 仓颉语言绑定webview； 可以使用任何 web 技术开发你的桌面程序。
+- [webview-sdk](https://gitcode.com/service/webview-sdk) - 仓颉语言绑定 webview；可以使用任何 web 技术开发你的桌面程序。
 
 ### Job Scheduling
 
@@ -92,9 +95,9 @@
 ### Miscellaneous
 
 - [charset4cj](https://gitcode.com/Cangjie-TPC/charset4cj) - 常用字符编码集合库。
-- [cjdotenv](https://github.com/gtn1024/cjdotenv) - 仓颉库用于从 `.env` 加载环境变量。
+- [cjdotenv](https://github.com/gtn1024/cjdotenv) - 仓颉库用于从 .env 加载环境变量。
 - [cjxe](https://github.com/gtn1024/cjxe) - 仓颉的快速命令行参数解析器。
-- [derive_macros](https://gitcode.com/OpenCangjieCommunity/derive_macros): 为仓颉导出宏。
+- [derive_macros](https://gitcode.com/OpenCangjieCommunity/derive_macros) - 为仓颉导出宏。
 - [filetype4cj](https://gitcode.com/Cangjie-SIG/filetype4cj) - 通过检查魔数签名推断文件和 MIME 类型。
 - [is_png_cj](https://gitcode.com/PermissionDog/is-png-cj) - 检测文件是否为 PNG 图像。
 - [snowflake4cj](https://github.com/gtn1024/snowflake4cj) - 仓颉的 Snowflake 算法实现。
@@ -102,14 +105,9 @@
 
 ### Networking
 
-#### TCP / UDP
-
-- [hyperion](https://gitcode.com/Cangjie-TPC/hyperion) - 一个用仓颉语言实现的 TCP 通信框架，支持添加自定义编码器和 IoFilter 以处理推送和弹出消息。
-
-#### HTTP Client
-
 - [ginger](https://gitcode.com/Chemxy/ginger) - 轻量级 HTTP 客户端，支持拦截请求和响应。
 - [httpclient4cj](https://gitcode.com/Cangjie-TPC/httpclient4cj) - 高效的 HTTP 客户端。
+- [hyperion](https://gitcode.com/Cangjie-TPC/hyperion) - 一个用仓颉语言实现的 TCP 通信框架，支持添加自定义编码器和 IoFilter 以处理推送和弹出消息。
 
 ### Science and Data Analysis
 
@@ -122,16 +120,17 @@
 
 ### Web
 
-- [cjoy](https://gitcode.com/Cangjie-SIG/cjoy) - 一个高性能、可扩展、轻量、省心的仓颉Web框架。Rest， 宏路由，Json， 中间件，参数绑定与校验，文件上传下载，MCP...
-- [easyapi](https://gitcode.com/OpenCangjieCommunity/easyapi) - 轻量级 Http 服务框架。
-- [fountain](https://gitcode.com/Cangjie-SIG/fountain) - 一个用于服务器应用开发的综合工具库。
+- [cjoy](https://gitcode.com/Cangjie-SIG/cjoy) - 一个高性能、可扩展、轻量、省心的仓颉 Web 框架。Rest，宏路由，Json，中间件，参数绑定与校验，文件上传下载，MCP...
 - [spire](https://gitcode.com/soulsoft/spire) - Spire (天擎) 一个基于仓颉语言开发、借鉴 ASP.NET Core 设计哲学的现代化 Web 框架。我们与仓颉官方团队共同研发，致力于打造轻量级、高性能、可扩展的应用开发体验。
 - [tea](https://gitcode.com/yishengTH/tea) - 轻量级、函数式、高效的 HTTP Web 框架。
+- [easyapi](https://gitcode.com/OpenCangjieCommunity/easyapi) - 轻量级 Http 服务框架。
+- [fountain](https://gitcode.com/Cangjie-SIG/fountain) - 一个用于服务器应用开发的综合工具库。
 
 ## Resources
 
-- [Cangjie Official Website](https://cangjie-lang.cn/)
-- [Cangjie Playground](https://playground.cj.zxilly.dev) - [Run cangjie code online](https://github.com/Zxilly/playground-cj)
+- [仓颉官网](https://cangjie-lang.cn/)
+- [仓颉操练场](https://playground.cj.zxilly.dev) - [在线运行仓颉代码](https://github.com/Zxilly/playground-cj)
+
 
 ## Star History
 

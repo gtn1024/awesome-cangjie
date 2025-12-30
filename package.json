@@ -1,0 +1,26 @@
+{
+  "name": "awesome-cangjie-web",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "npm run fetch-data && vite",
+    "build": "npm run fetch-data && vue-tsc && vite build",
+    "preview": "vite preview",
+    "fetch-data": "node scripts/fetch-data.js",
+    "generate-readme": "node scripts/generate-readme.js"
+  },
+  "dependencies": {
+    "vue": "^3.4.0",
+    "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.0",
+    "autoprefixer": "^10.4.16",
+    "js-yaml": "^4.1.0",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.10",
+    "vue-tsc": "^1.8.27"
+  }
+}
