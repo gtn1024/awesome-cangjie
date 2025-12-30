@@ -22,7 +22,7 @@ defineProps<{
 }>()
 
 const locale = inject<Ref<'zh' | 'en'>>('locale')
-const t = inject<(zh: string, en: string) => string>('t')
+const t = inject<(zh: string, en: string) => string>('t')!
 
 const getText = (obj: { zh: string; en: string }) => {
   return locale?.value === 'zh' ? obj.zh : obj.en

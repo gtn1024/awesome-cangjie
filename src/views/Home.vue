@@ -134,7 +134,7 @@ const categoryStats = computed(() => {
             {{ t('所有项目', 'All Projects') }}
           </template>
           <template v-else>
-            {{ getText(data.categories.find(c => c.id === selectedCategory)?.name || {}) }}
+            {{ getText(data.categories.find(c => c.id === selectedCategory)?.name || { zh: '', en: '' }) }}
           </template>
           <span class="text-sm font-normal text-gray-500 dark:text-gray-400 ml-2">
             ({{ filteredProjects.length }} {{ t('个项目', 'projects') }})
