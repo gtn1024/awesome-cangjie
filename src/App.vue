@@ -62,6 +62,9 @@ onMounted(() => {
             </div>
           </div>
           <nav class="hidden md:flex items-center space-x-6">
+            <a href="https://gitcode.com/gtn1024/awesome-cangjie" target="_blank" rel="noopener noreferrer" class="text-gray-600 dark:text-gray-400 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors">
+              GitCode
+            </a>
             <a href="https://github.com/gtn1024/awesome-cangjie" target="_blank" rel="noopener noreferrer" class="text-gray-600 dark:text-gray-400 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors">
               GitHub
             </a>
