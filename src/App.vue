@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { onMounted, provide, ref } from 'vue'
 import { RouterView } from 'vue-router'
+import Busuanzi from './components/Busuanzi.vue'
 
 const isDark = ref(false)
 const locale = ref<'zh' | 'en'>('zh')
@@ -93,6 +94,9 @@ onMounted(() => {
 
     <footer class="border-t border-gray-200 dark:border-dark-border bg-white/50 dark:bg-dark-bg/50 backdrop-blur-sm mt-20">
       <div class="container mx-auto px-4 py-8">
+        <div class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-center my-8">
+          <Busuanzi />
+        </div>
         <div class="text-center text-gray-600 dark:text-gray-400">
           <p class="mb-2">
             {{ t('为仓颉社区制作', 'Made with ❤️ for the Cangjie community') }}

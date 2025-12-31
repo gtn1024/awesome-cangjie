@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import type { Ref } from 'vue'
 import { computed, inject, onMounted, ref } from 'vue'
-import Busuanzi from '../components/Busuanzi.vue'
 import CategoryFilter from '../components/CategoryFilter.vue'
 import ProjectCard from '../components/ProjectCard.vue'
 import SearchBar from '../components/SearchBar.vue'
@@ -87,10 +86,6 @@ const categoryStats = computed(() => {
         {{ t('发现精选的仓颉框架、库和资源，加速你的开发之旅', 'Discover curated Cangjie frameworks, libraries, and resources to accelerate your development') }}
       </p>
     </section>
-
-    <div class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto text-center mb-8">
-      <Busuanzi />
-    </div>
 
     <!-- Stats -->
     <section class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
