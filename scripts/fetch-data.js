@@ -20,6 +20,22 @@ try {
   const yamlContent = fs.readFileSync(yamlPath, 'utf8')
   const data = yaml.load(yamlContent)
 
+  // 判断 yaml 中，id 是否唯一
+  const cids = new Set()
+  for (const item of data.categories) {
+    if (cids.has(item.id)) {
+      throw new Error(`分类 ID 重复: ${item.id}`)
+    }
+    cids.add(item.id)
+  }
+  const pids = new Set()
+  for (const item of data.projects) {
+    if (pids.has(item.id)) {
+      throw new Error(`项目 ID 重复: ${item.id}`)
+    }
+    pids.add(item.id)
+  }
+
   // 写入 JSON 文件
   fs.writeFileSync(jsonPath, JSON.stringify(data, null, 2), 'utf8')
 }
