@@ -71,6 +71,24 @@ categories:
       zh: eBPF 相关工具
       en: eBPF related tools
 
+  - id: cli
+    name:
+      zh: CLI Tools
+      en: CLI Tools
+    icon: ⌨️
+    description:
+      zh: 命令行界面工具与框架
+      en: Command-line interface tools and frameworks
+
+  - id: devtools
+    name:
+      zh: Developer Tools
+      en: Developer Tools
+    icon: 🔨
+    description:
+      zh: 开发工具与代码生成
+      en: Development tools and code generation
+
   - id: editor
     name:
       zh: Editor / IDE
@@ -553,7 +571,7 @@ projects:
     name:
       zh: cjxe
       en: cjxe
-    category: misc
+    category: cli
     repository: https://github.com/gtn1024/cjxe
     description:
       zh: 仓颉的快速命令行参数解析器。
@@ -564,7 +582,7 @@ projects:
     name:
       zh: cli-cj
       en: cli-cj
-    category: misc
+    category: cli
     repository: https://gitcode.com/Cangjie-SIG/cli-cj
     description:
       zh: 使用仓颉语言编写的命令行框架，旨在简化命令行界面 (CLI) 的创建过程。提供声明式的方式来定义命令、子命令和参数，自动处理输入解析、帮助信息生成和参数验证。
@@ -575,7 +593,7 @@ projects:
     name:
       zh: derive_macros
       en: derive_macros
-    category: misc
+    category: devtools
     repository: https://gitcode.com/OpenCangjieCommunity/derive_macros
     description:
       zh: 为仓颉导出宏。
@@ -619,7 +637,7 @@ projects:
     name:
       zh: terminalcolor
       en: terminalcolor
-    category: misc
+    category: cli
     repository: https://gitcode.com/Cangjie-SIG/terminalcolor
     description:
       zh: 符合直觉的终端颜色库，看一眼就会使用。
@@ -630,7 +648,7 @@ projects:
     name:
       zh: ansies4cj
       en: ansies4cj
-    category: misc
+    category: cli
     repository: https://gitcode.com/Cangjie-SIG/ansies4cj
     description:
       zh: ANSI 转义序列库，提供终端颜色、样式、光标控制和屏幕操作功能。
@@ -641,7 +659,7 @@ projects:
     name:
       zh: cjbind
       en: cjbind
-    category: misc
+    category: devtools
     repository: https://github.com/cjbind/cjbind
     description:
       zh: 自动生成 C 库到仓颉的 FFI 绑定代码。
@@ -652,7 +670,7 @@ projects:
     name:
       zh: J2CJ
       en: J2CJ
-    category: misc
+    category: devtools
     repository: https://gitcode.com/Cangjie-SIG/j2cj
     description:
       zh: 基于 AST 转换的 Java 到 Cangjie 源码转换工具，兼容 Java 生态，简化代码迁移。
@@ -751,7 +769,7 @@ projects:
     name:
       zh: cjgrapht
       en: cjgrapht
-    category: science
+    category: collection
     repository: https://gitcode.com/Cangjie-SIG/cjgrapht
     description:
       zh: 图论数据结构和算法库，提供多种图结构实现及常用图算法。
