@@ -149,7 +149,7 @@ projects:
       zh: 仓颉编译器
       en: Cangjie Compiler
     category: cangjie-opensource
-    url: https://gitcode.com/Cangjie/cangjie_compiler
+    repository: https://gitcode.com/Cangjie/cangjie_compiler
     description:
       zh: 仓颉编译器源码及 cjdb 调试工具。
       en: Cangjie compiler source code and cjdb debugging tool.
@@ -160,7 +160,7 @@ projects:
       zh: 仓颉运行时
       en: Cangjie Runtime
     category: cangjie-opensource
-    url: https://gitcode.com/Cangjie/cangjie_runtime
+    repository: https://gitcode.com/Cangjie/cangjie_runtime
     description:
       zh: 仓颉编程语言运行时与标准库。
       en: Cangjie programming language runtime and standard library.
@@ -171,7 +171,7 @@ projects:
       zh: 仓颉扩展库
       en: Cangjie Standard Extension
     category: cangjie-opensource
-    url: https://gitcode.com/Cangjie/cangjie_stdx
+    repository: https://gitcode.com/Cangjie/cangjie_stdx
     description:
       zh: 仓颉编程语言提供了 stdx 模块，该模块提供了网络、安全等领域的通用能力。
       en: Cangjie programming language provides the stdx module, which offers general capabilities in networking, security, and other domains.
@@ -182,7 +182,7 @@ projects:
       zh: 仓颉命令行工具
       en: Cangjie CLI Tools
     category: cangjie-opensource
-    url: https://gitcode.com/Cangjie/cangjie_tools
+    repository: https://gitcode.com/Cangjie/cangjie_tools
     description:
       zh: 仓颉编程语言命令行工具，包括仓颉包管理工具、仓颉格式化工具、仓颉多语言桥接工具及仓颉语言服务。
       en: Cangjie programming language command-line tools, including package manager, formatter, FFI tools, and language server.
@@ -193,7 +193,7 @@ projects:
       zh: 仓颉测试
       en: Cangjie Test
     category: cangjie-opensource
-    url: https://gitcode.com/Cangjie/cangjie_test
+    repository: https://gitcode.com/Cangjie/cangjie_test
     description:
       zh: 仓颉编程语言测试用例。
       en: Cangjie programming language test cases.
@@ -204,7 +204,7 @@ projects:
       zh: CangjieMagic
       en: CangjieMagic
     category: ai
-    url: https://gitcode.com/Cangjie-TPC/CangjieMagic
+    repository: https://gitcode.com/Cangjie-TPC/CangjieMagic
     description:
       zh: LLM Agent 开发框架基于仓颉编程语言构建，主要特性包括：Agent DSL、支持MCP协议、支持模块化调用、支持智能任务规划。
       en: 'LLM Agent development framework built with Cangjie. Main features: Agent DSL, MCP protocol support, modular invocation, intelligent task planning.'
@@ -215,7 +215,7 @@ projects:
       zh: deque4cj
       en: deque4cj
     category: collection
-    url: https://gitcode.com/SIGCANGJIE/deque4cj
+    repository: https://gitcode.com/SIGCANGJIE/deque4cj
     description:
       zh: deque4cj是一个用 Cangjie 语言实现的高效双端队列（Deque）库，支持灵活的元素插入、删除和动态容量管理。
       en: deque4cj is an efficient double-ended queue library implemented in Cangjie, supporting flexible element insertion, deletion, and dynamic capacity management.
@@ -226,7 +226,7 @@ projects:
       zh: cangjie_toml
       en: cangjie_toml
     category: configuration
-    url: https://gitcode.com/PermissionDog/cangjie_toml
+    repository: https://gitcode.com/PermissionDog/cangjie_toml
     description:
       zh: 仓颉的 TOML 解析器。
       en: TOML parser for Cangjie.
@@ -237,7 +237,7 @@ projects:
       zh: cjjson
       en: cjjson
     category: configuration
-    url: https://gitcode.com/Cangjie-TPC/cangjieJSON
+    repository: https://gitcode.com/Cangjie-TPC/cangjieJSON
     description:
       zh: 仓颉的 JSON 序列化/反序列化库。
       en: JSON serialization/deserialization library for Cangjie.
@@ -248,7 +248,7 @@ projects:
       zh: CJson
       en: CJson
     category: configuration
-    url: https://gitcode.com/Cangjie-TPC/CJson
+    repository: https://gitcode.com/Cangjie-TPC/CJson
     description:
       zh: JSON 序列化/反序列化工具。
       en: JSON serialization/deserialization tool.
@@ -259,7 +259,7 @@ projects:
       zh: ini4cj
       en: ini4cj
     category: configuration
-    url: https://gitcode.com/Cangjie-TPC/ini4cj
+    repository: https://gitcode.com/Cangjie-TPC/ini4cj
     description:
       zh: INI 文件解析器。
       en: INI file parser.
@@ -270,7 +270,7 @@ projects:
       zh: toml4cj
       en: toml4cj
     category: configuration
-    url: https://gitcode.com/Cangjie-TPC/toml4cj
+    repository: https://gitcode.com/Cangjie-TPC/toml4cj
     description:
       zh: TOML 格式解析。
       en: TOML format parser.
@@ -281,7 +281,7 @@ projects:
       zh: xmlstream
       en: xmlstream
     category: configuration
-    url: https://gitcode.com/Cangjie-TPC/xml_stream
+    repository: https://gitcode.com/Cangjie-TPC/xml_stream
     description:
       zh: XML 序列化反序列化库，提供与 XML 操作相关的 STAX 风格接口，符合 XML 1.0 规范，并支持命名空间。
       en: XML serialization/deserialization library providing STAX-style interfaces for XML operations, compliant with XML 1.0 specification and supporting namespaces.
@@ -292,7 +292,7 @@ projects:
       zh: xml-ffi
       en: xml-ffi
     category: configuration
-    url: https://gitcode.com/Cangjie-TPC/xml-ffi
+    repository: https://gitcode.com/Cangjie-TPC/xml-ffi
     description:
       zh: XML 格式解析库，支持 XML DOM 和 XML SAX 解析模式。
       en: XML format parsing library supporting both XML DOM and XML SAX parsing modes.
@@ -303,7 +303,7 @@ projects:
       zh: yaml4cj
       en: yaml4cj
     category: configuration
-    url: https://gitcode.com/Cangjie-TPC/yaml4cj
+    repository: https://gitcode.com/Cangjie-TPC/yaml4cj
     description:
       zh: 快速可靠地解析和生成 YAML 数据，支持 YAML 1.1 和 1.2 的大部分内容。
       en: Fast and reliable YAML parsing and generation, supporting most of YAML 1.1 and 1.2 specifications.
@@ -314,7 +314,7 @@ projects:
       zh: mysqlclient4cj
       en: mysqlclient4cj
     category: database
-    url: https://gitcode.com/Cangjie-SIG/mysql-driver
+    repository: https://gitcode.com/Cangjie-SIG/mysql-driver
     description:
       zh: 仓颉原生 MySQL 客户端驱动，支持 TIDB、OceanBase 等。
       en: Native MySQL client driver for Cangjie, supporting TiDB, OceanBase, etc.
@@ -325,7 +325,7 @@ projects:
       zh: opengauss-driver
       en: opengauss-driver
     category: database
-    url: https://gitcode.com/Cangjie-TPC/opengauss-driver
+    repository: https://gitcode.com/Cangjie-TPC/opengauss-driver
     description:
       zh: openGauss 和 PostgreSQL 客户端驱动。
       en: openGauss and PostgreSQL client driver.
@@ -336,7 +336,7 @@ projects:
       zh: redis-sdk
       en: redis-sdk
     category: database
-    url: https://gitcode.com/Cangjie-TPC/redis-sdk
+    repository: https://gitcode.com/Cangjie-TPC/redis-sdk
     description:
       zh: Redis 客户端 SDK，由仓颉语言实现。兼容 Jedis API。支持 RESP2 和 RESP3 协议。
       en: Redis client SDK implemented in Cangjie. Compatible with Jedis API. Supports RESP2 and RESP3 protocols.
@@ -347,7 +347,7 @@ projects:
       zh: sqlsharp
       en: sqlsharp
     category: database
-    url: https://gitcode.com/soulsoft/sqlsharp
+    repository: https://gitcode.com/soulsoft/sqlsharp
     description:
       zh: 一款灵感来自 C# 的 ADO.NET + Dapper 设计的 ORM。
       en: An ORM inspired by C#'s ADO.NET + Dapper design.
@@ -358,7 +358,7 @@ projects:
       zh: Dapr Cangjie SDK
       en: Dapr Cangjie SDK
     category: distributed
-    url: https://gitcode.com/PermissionDog/dapr-cangjie-sdk
+    repository: https://gitcode.com/PermissionDog/dapr-cangjie-sdk
     description:
       zh: 仓颉语言实现的 Dapr SDK。
       en: Dapr SDK implemented in Cangjie language.
@@ -369,7 +369,7 @@ projects:
       zh: mqtt4cj
       en: mqtt4cj
     category: distributed
-    url: https://gitcode.com/Cangjie-TPC/mqtt4cj
+    repository: https://gitcode.com/Cangjie-TPC/mqtt4cj
     description:
       zh: MQTT 消息队列遥测传输协议库。
       en: MQTT message queue telemetry transport protocol library.
@@ -380,7 +380,7 @@ projects:
       zh: s3-sdk
       en: s3-sdk
     category: distributed
-    url: https://gitcode.com/Cangjie-TPC/s3-sdk
+    repository: https://gitcode.com/Cangjie-TPC/s3-sdk
     description:
       zh: AWS S3 客户端 SDK 实现，适用于仓颉。
       en: AWS S3 client SDK implementation for Cangjie.
@@ -391,7 +391,7 @@ projects:
       zh: cangjie_libbpf
       en: cangjie_libbpf
     category: ebpf
-    url: https://gitcode.com/hevienz/cangjie_libbpf
+    repository: https://gitcode.com/hevienz/cangjie_libbpf
     description:
       zh: 仓颉的 libbpf 绑定。
       en: libbpf bindings for Cangjie.
@@ -402,7 +402,7 @@ projects:
       zh: CodeArts IDE for Cangjie
       en: CodeArts IDE for Cangjie
     category: editor
-    url: https://devcloud.cn-north-4.huaweicloud.com/codeartside/home?product=cangjie
+    repository: https://devcloud.cn-north-4.huaweicloud.com/codeartside/home?product=cangjie
     description:
       zh: 华为云 CodeArts IDE for Cangjie。
       en: Huawei Cloud CodeArts IDE for Cangjie.
@@ -413,7 +413,7 @@ projects:
       zh: intellij-cangjie
       en: intellij-cangjie
     category: editor
-    url: https://gitcode.com/OpenCangjieCommunity/intellij-cangjie
+    repository: https://gitcode.com/OpenCangjieCommunity/intellij-cangjie
     description:
       zh: IntelliJ IDEA 的仓颉插件。
       en: Cangjie plugin for IntelliJ IDEA.
@@ -424,7 +424,7 @@ projects:
       zh: Cangjie-language-Neovim
       en: Cangjie-language-Neovim
     category: editor
-    url: https://github.com/shiro-42/Cangjie-language-Neovim
+    repository: https://github.com/shiro-42/Cangjie-language-Neovim
     description:
       zh: Neovim 的简单语法高亮。
       en: Simple syntax highlighting for Neovim.
@@ -435,7 +435,7 @@ projects:
       zh: webview-sdk
       en: webview-sdk
     category: gui
-    url: https://gitcode.com/service/webview-sdk
+    repository: https://gitcode.com/service/webview-sdk
     description:
       zh: 仓颉语言绑定 webview；可以使用任何 web 技术开发你的桌面程序。
       en: WebView bindings for Cangjie; develop desktop applications using any web technology.
@@ -446,7 +446,7 @@ projects:
       zh: quartz4cj
       en: quartz4cj
     category: job-scheduling
-    url: https://gitcode.com/Cangjie-TPC/quartz4cj
+    repository: https://gitcode.com/Cangjie-TPC/quartz4cj
     description:
       zh: 功能丰富的开源作业调度库。
       en: Feature-rich open source job scheduling library.
@@ -457,7 +457,7 @@ projects:
       zh: log-cj
       en: log-cj
     category: logging
-    url: https://gitcode.com/Cangjie-TPC/log-cj
+    repository: https://gitcode.com/Cangjie-TPC/log-cj
     description:
       zh: 日志管理框架。
       en: Logging management framework.
@@ -468,7 +468,7 @@ projects:
       zh: seq4cj
       en: seq4cj
     category: logging
-    url: https://gitcode.com/PermissionDog/seq4cj
+    repository: https://gitcode.com/PermissionDog/seq4cj
     description:
       zh: Cangjie 语言标准库 log.Logger 的 seq 日志客户端实现。
       en: Seq logging client implementation for Cangjie's standard library log.Logger.
@@ -479,7 +479,7 @@ projects:
       zh: charset4cj
       en: charset4cj
     category: misc
-    url: https://gitcode.com/Cangjie-TPC/charset4cj
+    repository: https://gitcode.com/Cangjie-TPC/charset4cj
     description:
       zh: 常用字符编码集合库。
       en: Common character encoding collection library.
@@ -490,7 +490,7 @@ projects:
       zh: cjdotenv
       en: cjdotenv
     category: misc
-    url: https://github.com/gtn1024/cjdotenv
+    repository: https://github.com/gtn1024/cjdotenv
     description:
       zh: 仓颉库用于从 .env 加载环境变量。
       en: Cangjie library for loading environment variables from .env files.
@@ -501,7 +501,7 @@ projects:
       zh: cjxe
       en: cjxe
     category: misc
-    url: https://github.com/gtn1024/cjxe
+    repository: https://github.com/gtn1024/cjxe
     description:
       zh: 仓颉的快速命令行参数解析器。
       en: Fast command-line argument parser for Cangjie.
@@ -512,7 +512,7 @@ projects:
       zh: derive_macros
       en: derive_macros
     category: misc
-    url: https://gitcode.com/OpenCangjieCommunity/derive_macros
+    repository: https://gitcode.com/OpenCangjieCommunity/derive_macros
     description:
       zh: 为仓颉导出宏。
       en: Derive macros for Cangjie.
@@ -523,7 +523,7 @@ projects:
       zh: filetype4cj
       en: filetype4cj
     category: misc
-    url: https://gitcode.com/Cangjie-SIG/filetype4cj
+    repository: https://gitcode.com/Cangjie-SIG/filetype4cj
     description:
       zh: 通过检查魔数签名推断文件和 MIME 类型。
       en: Infer file and MIME types by checking magic number signatures.
@@ -534,7 +534,7 @@ projects:
       zh: is_png_cj
       en: is_png_cj
     category: misc
-    url: https://gitcode.com/PermissionDog/is-png-cj
+    repository: https://gitcode.com/PermissionDog/is-png-cj
     description:
       zh: 检测文件是否为 PNG 图像。
       en: Detect whether a file is a PNG image.
@@ -545,7 +545,7 @@ projects:
       zh: snowflake4cj
       en: snowflake4cj
     category: misc
-    url: https://github.com/gtn1024/snowflake4cj
+    repository: https://github.com/gtn1024/snowflake4cj
     description:
       zh: 仓颉的 Snowflake 算法实现。
       en: Snowflake algorithm implementation for Cangjie.
@@ -556,7 +556,7 @@ projects:
       zh: terminalcolor
       en: terminalcolor
     category: misc
-    url: https://gitcode.com/Cangjie-SIG/terminalcolor
+    repository: https://gitcode.com/Cangjie-SIG/terminalcolor
     description:
       zh: 符合直觉的终端颜色库，看一眼就会使用。
       en: Intuitive terminal color library that's easy to use.
@@ -567,7 +567,7 @@ projects:
       zh: ginger
       en: ginger
     category: networking
-    url: https://gitcode.com/Chemxy/ginger
+    repository: https://gitcode.com/Chemxy/ginger
     description:
       zh: 轻量级 HTTP 客户端，支持拦截请求和响应。
       en: Lightweight HTTP client supporting request and response interception.
@@ -578,7 +578,7 @@ projects:
       zh: httpclient4cj
       en: httpclient4cj
     category: networking
-    url: https://gitcode.com/Cangjie-TPC/httpclient4cj
+    repository: https://gitcode.com/Cangjie-TPC/httpclient4cj
     description:
       zh: 高效的 HTTP 客户端。
       en: Efficient HTTP client.
@@ -589,7 +589,7 @@ projects:
       zh: hyperion
       en: hyperion
     category: networking
-    url: https://gitcode.com/Cangjie-TPC/hyperion
+    repository: https://gitcode.com/Cangjie-TPC/hyperion
     description:
       zh: 一个用仓颉语言实现的 TCP 通信框架，支持添加自定义编码器和 IoFilter 以处理推送和弹出消息。
       en: A TCP communication framework implemented in Cangjie, supporting custom encoders and IoFilters for handling message push and pop.
@@ -600,7 +600,7 @@ projects:
       zh: matrix4cj
       en: matrix4cj
     category: science
-    url: https://gitcode.com/Cangjie-TPC/matrix4cj
+    repository: https://gitcode.com/Cangjie-TPC/matrix4cj
     description:
       zh: 用于构建和操作稠密矩阵的线性代数库。
       en: Linear algebra library for building and manipulating dense matrices.
@@ -611,7 +611,7 @@ projects:
       zh: stats4cj
       en: stats4cj
     category: science
-    url: https://gitcode.com/Chemxy/stats4cj
+    repository: https://gitcode.com/Chemxy/stats4cj
     description:
       zh: 由仓颉实现的数学统计库。
       en: Mathematical statistics library implemented in Cangjie.
@@ -622,7 +622,7 @@ projects:
       zh: jwt4cj
       en: jwt4cj
     category: security
-    url: https://gitcode.com/Cangjie-TPC/jwt4cj
+    repository: https://gitcode.com/Cangjie-TPC/jwt4cj
     description:
       zh: 生成和验证 JSON Web Tokens，支持 Payload 验证、HMAC 算法签名和验证、RSA 算法签名和验证，以及 ECDSA 算法签名和验证。
       en: Generate and verify JSON Web Tokens, supporting payload validation, HMAC signing and verification, RSA signing and verification, and ECDSA signing and verification.
@@ -633,7 +633,7 @@ projects:
       zh: cjoy
       en: cjoy
     category: web
-    url: https://gitcode.com/Cangjie-SIG/cjoy
+    repository: https://gitcode.com/Cangjie-SIG/cjoy
     description:
       zh: 一个高性能、可扩展、轻量、省心的仓颉 Web 框架。Rest，宏路由，Json，中间件，参数绑定与校验，文件上传下载，MCP...
       en: A high-performance, scalable, lightweight, and easy-to-use Cangjie web framework. RESTful, macro routing, JSON, middleware, parameter binding and validation, file upload/download, MCP...
@@ -644,7 +644,7 @@ projects:
       zh: spire
       en: spire
     category: web
-    url: https://gitcode.com/soulsoft/spire
+    repository: https://gitcode.com/soulsoft/spire
     description:
       zh: Spire (天擎) 一个基于仓颉语言开发、借鉴 ASP.NET Core 设计哲学的现代化 Web 框架。我们与仓颉官方团队共同研发，致力于打造轻量级、高性能、可扩展的应用开发体验。
       en: Spire is a modern web framework developed in Cangjie, inspired by ASP.NET Core design philosophy. Developed jointly with the Cangjie official team, dedicated to creating a lightweight, high-performance, scalable application development experience.
@@ -655,7 +655,7 @@ projects:
       zh: tea
       en: tea
     category: web
-    url: https://gitcode.com/yishengTH/tea
+    repository: https://gitcode.com/yishengTH/tea
     description:
       zh: 轻量级、函数式、高效的 HTTP Web 框架。
       en: Lightweight, functional, efficient HTTP web framework.
@@ -666,7 +666,7 @@ projects:
       zh: easyapi
       en: easyapi
     category: web
-    url: https://gitcode.com/OpenCangjieCommunity/easyapi
+    repository: https://gitcode.com/OpenCangjieCommunity/easyapi
     description:
       zh: 轻量级 Http 服务框架。
       en: Lightweight HTTP service framework.
@@ -677,7 +677,7 @@ projects:
       zh: fountain
       en: fountain
     category: web
-    url: https://gitcode.com/Cangjie-SIG/fountain
+    repository: https://gitcode.com/Cangjie-SIG/fountain
     description:
       zh: 一个用于服务器应用开发的综合工具库。
       en: A comprehensive toolkit for server application development.

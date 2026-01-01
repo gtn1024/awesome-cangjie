@@ -76,14 +76,14 @@ function generateReadme(data, lang) {
     for (const project of catProjects) {
       const projName = project.name[lang]
       const projDesc = project.description[lang]
-      const url = project.url
+      const repository = project.repository
 
       // 如果是官方项目，添加官方标签
       const tags = project.tags || []
       const isOfficial = tags.includes('official')
       const officialBadge = isOfficial ? ' *(Official)*' : ''
 
-      projectsSection += `- [${projName}](${url})${officialBadge} - ${projDesc}\n`
+      projectsSection += `- [${projName}](${repository})${officialBadge} - ${projDesc}\n`
     }
 
     projectsSection += '\n'

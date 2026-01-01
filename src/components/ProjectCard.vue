@@ -12,7 +12,7 @@ interface Category {
 interface Project {
   name: { zh: string, en: string }
   category: string
-  url: string
+  repository: string
   description: { zh: string, en: string }
   tags: string[]
 }
@@ -32,7 +32,7 @@ function getText(obj: { zh: string, en: string }) {
 
 <template>
   <a
-    :href="project.url"
+    :href="project.repository"
     target="_blank"
     rel="noopener noreferrer"
     class="card p-6 block hover:-translate-y-1 transition-transform duration-300"
@@ -62,7 +62,7 @@ function getText(obj: { zh: string, en: string }) {
       <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
       </svg>
-      {{ t('访问项目', 'Visit Project') }}
+      {{ t('代码仓库', 'Code Repository') }}
     </div>
   </a>
 </template>

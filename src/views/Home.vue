@@ -15,7 +15,7 @@ interface Category {
 interface Project {
   name: { zh: string, en: string }
   category: string
-  url: string
+  repository: string
   description: { zh: string, en: string }
   tags: string[]
 }
