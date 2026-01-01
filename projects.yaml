@@ -26,6 +26,15 @@ categories:
       zh: 数据集合与容器类库
       en: Data collections and container libraries
 
+  - id: compression
+    name:
+      zh: Compression
+      en: Compression
+    icon: 📦
+    description:
+      zh: 压缩与归档工具
+      en: Compression and archive tools
+
   - id: configuration
     name:
       zh: Configuration
@@ -210,6 +219,17 @@ projects:
       en: 'LLM Agent development framework built with Cangjie. Main features: Agent DSL, MCP protocol support, modular invocation, intelligent task planning.'
     tags: [ai, agent, llp, mcp]
 
+  - id: cangchain
+    name:
+      zh: CangChain
+      en: CangChain
+    category: ai
+    repository: https://gitcode.com/Cangjie-TPC/CangChain
+    description:
+      zh: 基于仓颉的多智能体协同框架。
+      en: Multi-agent collaboration framework based on Cangjie.
+    tags: [ai, agent, multi-agent, framework]
+
   - id: deque4cj
     name:
       zh: deque4cj
@@ -353,6 +373,17 @@ projects:
       en: An ORM inspired by C#'s ADO.NET + Dapper design.
     tags: [orm, database, sql]
 
+  - id: simplekv
+    name:
+      zh: simplekv
+      en: simplekv
+    category: database
+    repository: https://gitcode.com/Cangjie-SIG/simplekv
+    description:
+      zh: 用 Cangjie 语言实现的高效、简洁的键值存储库，支持快速的数据查找、插入、删除，并具备排序数据获取、范围扫描、并发安全等高级功能，适用于需要高性能数据存储的场景。
+      en: Efficient and concise key-value storage library implemented in Cangjie, supporting fast data lookup, insertion, and deletion, with advanced features like sorted data retrieval, range scanning, and concurrent safety, suitable for high-performance data storage scenarios.
+    tags: [kv, storage, database, embedded]
+
   - id: dapr-cangjie-sdk
     name:
       zh: Dapr Cangjie SDK
@@ -385,6 +416,17 @@ projects:
       zh: AWS S3 客户端 SDK 实现，适用于仓颉。
       en: AWS S3 client SDK implementation for Cangjie.
     tags: [s3, aws, storage]
+
+  - id: gateway-cj
+    name:
+      zh: gateway-cj
+      en: gateway-cj
+    category: distributed
+    repository: https://gitcode.com/Cangjie-SIG/gateway-cj
+    description:
+      zh: 基于仓颉语言实现的微服务网关。
+      en: Microservice gateway implemented in Cangjie.
+    tags: [gateway, microservices, api-gateway]
 
   - id: cangjie_libbpf
     name:
@@ -440,6 +482,17 @@ projects:
       zh: 仓颉语言绑定 webview；可以使用任何 web 技术开发你的桌面程序。
       en: WebView bindings for Cangjie; develop desktop applications using any web technology.
     tags: [desktop, webview]
+
+  - id: cjqt
+    name:
+      zh: CJQT
+      en: CJQT
+    category: gui
+    repository: https://gitcode.com/Cangjie-TPC/CJQT
+    description:
+      zh: 仓颉语言对 Qt 封装库。
+      en: Qt binding library for Cangjie language.
+    tags: [qt, gui, desktop, binding]
 
   - id: quartz4cj
     name:
@@ -507,6 +560,17 @@ projects:
       en: Fast command-line argument parser for Cangjie.
     tags: [cli, parser, argparse]
 
+  - id: cli-cj
+    name:
+      zh: cli-cj
+      en: cli-cj
+    category: misc
+    repository: https://gitcode.com/Cangjie-SIG/cli-cj
+    description:
+      zh: 使用仓颉语言编写的命令行框架，旨在简化命令行界面 (CLI) 的创建过程。提供声明式的方式来定义命令、子命令和参数，自动处理输入解析、帮助信息生成和参数验证。
+      en: Command-line framework written in Cangjie, designed to simplify the creation of CLI interfaces. Provides a declarative way to define commands, subcommands, and parameters, automatically handling input parsing, help generation, and parameter validation.
+    tags: [cli, framework, parser, argparse]
+
   - id: derive_macros
     name:
       zh: derive_macros
@@ -562,6 +626,50 @@ projects:
       en: Intuitive terminal color library that's easy to use.
     tags: [terminal, color, cli]
 
+  - id: ansies4cj
+    name:
+      zh: ansies4cj
+      en: ansies4cj
+    category: misc
+    repository: https://gitcode.com/Cangjie-SIG/ansies4cj
+    description:
+      zh: ANSI 转义序列库，提供终端颜色、样式、光标控制和屏幕操作功能。
+      en: ANSI escape sequence library, providing terminal colors, styles, cursor control, and screen operations.
+    tags: [terminal, ansi, color, cli]
+
+  - id: cjbind
+    name:
+      zh: cjbind
+      en: cjbind
+    category: misc
+    repository: https://github.com/cjbind/cjbind
+    description:
+      zh: 自动生成 C 库到仓颉的 FFI 绑定代码。
+      en: Automatically generate FFI binding code from C libraries to Cangjie.
+    tags: [ffi, codegen, binding, c]
+
+  - id: j2cj
+    name:
+      zh: J2CJ
+      en: J2CJ
+    category: misc
+    repository: https://gitcode.com/Cangjie-SIG/j2cj
+    description:
+      zh: 基于 AST 转换的 Java 到 Cangjie 源码转换工具，兼容 Java 生态，简化代码迁移。
+      en: Java to Cangjie source code transformation tool based on AST conversion, compatible with Java ecosystem, simplifying code migration.
+    tags: [java, transpiler, migration, ast]
+
+  - id: zip4cj
+    name:
+      zh: zip4cj
+      en: zip4cj
+    category: compression
+    repository: https://gitcode.com/Cangjie-TPC/zip4cj
+    description:
+      zh: 用于创建和解压 ZIP 压缩格式的库。
+      en: Library for creating and extracting ZIP compression format.
+    tags: [zip, compression, archive]
+
   - id: ginger
     name:
       zh: ginger
@@ -595,6 +703,17 @@ projects:
       en: A TCP communication framework implemented in Cangjie, supporting custom encoders and IoFilters for handling message push and pop.
     tags: [tcp, network]
 
+  - id: feign4cj
+    name:
+      zh: feign4cj
+      en: feign4cj
+    category: networking
+    repository: https://gitcode.com/Cangjie-SIG/feign4cj
+    description:
+      zh: 基于宏的声明式 HTTP 客户端，受 Feign 启发，通过接口定义 HTTP API。
+      en: Macro-based declarative HTTP client inspired by Feign, defining HTTP APIs through interfaces.
+    tags: [http, client, feign, macro]
+
   - id: matrix4cj
     name:
       zh: matrix4cj
@@ -617,6 +736,28 @@ projects:
       en: Mathematical statistics library implemented in Cangjie.
     tags: [statistics, math, science]
 
+  - id: cjnum
+    name:
+      zh: cjnum
+      en: cjnum
+    category: science
+    repository: https://gitcode.com/Cangjie-SIG/cjnum
+    description:
+      zh: 仓颉数值计算库，提供数学函数、科学计算和数值分析功能。
+      en: Numerical computing library for Cangjie, providing mathematical functions, scientific computing, and numerical analysis capabilities.
+    tags: [math, numerical, scientific, computing]
+
+  - id: cjgrapht
+    name:
+      zh: cjgrapht
+      en: cjgrapht
+    category: science
+    repository: https://gitcode.com/Cangjie-SIG/cjgrapht
+    description:
+      zh: 图论数据结构和算法库，提供多种图结构实现及常用图算法。
+      en: Graph theory data structures and algorithms library, providing various graph structure implementations and common graph algorithms.
+    tags: [graph, algorithm, data-structure, graph-theory]
+
   - id: jwt4cj
     name:
       zh: jwt4cj
@@ -627,6 +768,17 @@ projects:
       zh: 生成和验证 JSON Web Tokens，支持 Payload 验证、HMAC 算法签名和验证、RSA 算法签名和验证，以及 ECDSA 算法签名和验证。
       en: Generate and verify JSON Web Tokens, supporting payload validation, HMAC signing and verification, RSA signing and verification, and ECDSA signing and verification.
     tags: [jwt, auth, security]
+
+  - id: md2_cj
+    name:
+      zh: md2_cj
+      en: md2_cj
+    category: security
+    repository: https://gitcode.com/Cangjie-TPC/md2_cj
+    description:
+      zh: 仓颉版 MD2 摘要算法。
+      en: Cangjie version of MD2 digest algorithm.
+    tags: [md2, hash, crypto, digest]
 
   - id: cjoy
     name:
@@ -682,3 +834,14 @@ projects:
       zh: 一个用于服务器应用开发的综合工具库。
       en: A comprehensive toolkit for server application development.
     tags: [web, framework, server]
+
+  - id: mustache-cj
+    name:
+      zh: mustache-cj
+      en: mustache-cj
+    category: web
+    repository: https://gitcode.com/Cangjie-SIG/mustache-cj
+    description:
+      zh: 基于仓颉实现的 Mustache 模板引擎。
+      en: Mustache template engine implemented in Cangjie.
+    tags: [template, mustache, web, rendering]
