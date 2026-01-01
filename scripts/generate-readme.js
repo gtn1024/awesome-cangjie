@@ -108,10 +108,12 @@ function generateReadme(data, lang) {
 
 function generateAnchor(text) {
   // 生成 GitHub 风格的锚点
+  // GitHub 会保留中文字符，将空格替换为连字符，移除特殊字符
   return text
     .toLowerCase()
-    .replace(/[^\w\s-]/g, '') // 移除特殊字符
+    .replace(/[^\u4e00-\u9fa5a-z0-9\s-]/gi, '') // 保留中文、英文字母、数字、空格和连字符
     .replace(/\s+/g, '-') // 空格替换为连字符
-    .replace(/-+/g, '-') // 多个连字符合并为一个
+    .replace(/^-+/, '') // 移除开头的连字符
+    .replace(/-+$/, '') // 移除结尾的连字符
     .trim()
 }

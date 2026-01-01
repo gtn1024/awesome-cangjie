@@ -19,7 +19,7 @@ categories:
 
   - id: collection
     name:
-      zh: Collection
+      zh: 数据集合
       en: Collection
     icon: 📦
     description:
@@ -28,7 +28,7 @@ categories:
 
   - id: compression
     name:
-      zh: Compression
+      zh: 压缩工具
       en: Compression
     icon: 📦
     description:
@@ -37,7 +37,7 @@ categories:
 
   - id: configuration
     name:
-      zh: Configuration
+      zh: 配置管理
       en: Configuration
     icon: ⚙️
     description:
@@ -46,7 +46,7 @@ categories:
 
   - id: database
     name:
-      zh: Database
+      zh: 数据库
       en: Database
     icon: 🗄️
     description:
@@ -55,7 +55,7 @@ categories:
 
   - id: distributed
     name:
-      zh: Distributed Systems
+      zh: 分布式系统
       en: Distributed Systems
     icon: 🌐
     description:
@@ -73,7 +73,7 @@ categories:
 
   - id: cli
     name:
-      zh: CLI Tools
+      zh: 命令行工具
       en: CLI Tools
     icon: ⌨️
     description:
@@ -82,7 +82,7 @@ categories:
 
   - id: devtools
     name:
-      zh: Developer Tools
+      zh: 开发工具
       en: Developer Tools
     icon: 🔨
     description:
@@ -91,7 +91,7 @@ categories:
 
   - id: editor
     name:
-      zh: Editor / IDE
+      zh: 编辑器
       en: Editor / IDE
     icon: 💻
     description:
@@ -100,7 +100,7 @@ categories:
 
   - id: gui
     name:
-      zh: GUI
+      zh: 图形界面
       en: GUI
     icon: 🖼️
     description:
@@ -109,7 +109,7 @@ categories:
 
   - id: job-scheduling
     name:
-      zh: Job Scheduling
+      zh: 任务调度
       en: Job Scheduling
     icon: ⏰
     description:
@@ -118,7 +118,7 @@ categories:
 
   - id: logging
     name:
-      zh: Logging
+      zh: 日志管理
       en: Logging
     icon: 📝
     description:
@@ -127,7 +127,7 @@ categories:
 
   - id: misc
     name:
-      zh: Miscellaneous
+      zh: 其他
       en: Miscellaneous
     icon: 🛠️
     description:
@@ -136,7 +136,7 @@ categories:
 
   - id: networking
     name:
-      zh: Networking
+      zh: 网络编程
       en: Networking
     icon: 🌍
     description:
@@ -145,7 +145,7 @@ categories:
 
   - id: science
     name:
-      zh: Science and Data Analysis
+      zh: 科学计算
       en: Science and Data Analysis
     icon: 📊
     description:
@@ -154,7 +154,7 @@ categories:
 
   - id: security
     name:
-      zh: Security
+      zh: 安全加密
       en: Security
     icon: 🔒
     description:
@@ -163,7 +163,7 @@ categories:
 
   - id: web
     name:
-      zh: Web
+      zh: Web 开发
       en: Web
     icon: 🌐
     description:
