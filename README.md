@@ -12,10 +12,13 @@
   - [仓颉开源](#)
   - [AI](#ai)
   - [Collection](#collection)
+  - [Compression](#compression)
   - [Configuration](#configuration)
   - [Database](#database)
   - [Distributed Systems](#distributed-systems)
   - [eBPF](#ebpf)
+  - [CLI Tools](#cli-tools)
+  - [Developer Tools](#developer-tools)
   - [Editor / IDE](#editor-ide)
   - [GUI](#gui)
   - [Job Scheduling](#job-scheduling)
@@ -40,10 +43,16 @@
 ### AI
 
 - [CangjieMagic](https://gitcode.com/Cangjie-TPC/CangjieMagic) - LLM Agent 开发框架基于仓颉编程语言构建，主要特性包括：Agent DSL、支持MCP协议、支持模块化调用、支持智能任务规划。
+- [CangChain](https://gitcode.com/Cangjie-TPC/CangChain) - 基于仓颉的多智能体协同框架。
 
 ### Collection
 
 - [deque4cj](https://gitcode.com/SIGCANGJIE/deque4cj) - deque4cj是一个用 Cangjie 语言实现的高效双端队列（Deque）库，支持灵活的元素插入、删除和动态容量管理。
+- [cjgrapht](https://gitcode.com/Cangjie-SIG/cjgrapht) - 图论数据结构和算法库，提供多种图结构实现及常用图算法。
+
+### Compression
+
+- [zip4cj](https://gitcode.com/Cangjie-TPC/zip4cj) - 用于创建和解压 ZIP 压缩格式的库。
 
 ### Configuration
 
@@ -62,16 +71,31 @@
 - [opengauss-driver](https://gitcode.com/Cangjie-TPC/opengauss-driver) - openGauss 和 PostgreSQL 客户端驱动。
 - [redis-sdk](https://gitcode.com/Cangjie-TPC/redis-sdk) - Redis 客户端 SDK，由仓颉语言实现。兼容 Jedis API。支持 RESP2 和 RESP3 协议。
 - [sqlsharp](https://gitcode.com/soulsoft/sqlsharp) - 一款灵感来自 C# 的 ADO.NET + Dapper 设计的 ORM。
+- [simplekv](https://gitcode.com/Cangjie-SIG/simplekv) - 用 Cangjie 语言实现的高效、简洁的键值存储库，支持快速的数据查找、插入、删除，并具备排序数据获取、范围扫描、并发安全等高级功能，适用于需要高性能数据存储的场景。
 
 ### Distributed Systems
 
 - [Dapr Cangjie SDK](https://gitcode.com/PermissionDog/dapr-cangjie-sdk) - 仓颉语言实现的 Dapr SDK。
 - [mqtt4cj](https://gitcode.com/Cangjie-TPC/mqtt4cj) - MQTT 消息队列遥测传输协议库。
 - [s3-sdk](https://gitcode.com/Cangjie-TPC/s3-sdk) - AWS S3 客户端 SDK 实现，适用于仓颉。
+- [gateway-cj](https://gitcode.com/Cangjie-SIG/gateway-cj) - 基于仓颉语言实现的微服务网关。
 
 ### eBPF
 
 - [cangjie_libbpf](https://gitcode.com/hevienz/cangjie_libbpf) - 仓颉的 libbpf 绑定。
+
+### CLI Tools
+
+- [cjxe](https://github.com/gtn1024/cjxe) - 仓颉的快速命令行参数解析器。
+- [cli-cj](https://gitcode.com/Cangjie-SIG/cli-cj) - 使用仓颉语言编写的命令行框架，旨在简化命令行界面 (CLI) 的创建过程。提供声明式的方式来定义命令、子命令和参数，自动处理输入解析、帮助信息生成和参数验证。
+- [terminalcolor](https://gitcode.com/Cangjie-SIG/terminalcolor) - 符合直觉的终端颜色库，看一眼就会使用。
+- [ansies4cj](https://gitcode.com/Cangjie-SIG/ansies4cj) - ANSI 转义序列库，提供终端颜色、样式、光标控制和屏幕操作功能。
+
+### Developer Tools
+
+- [derive_macros](https://gitcode.com/OpenCangjieCommunity/derive_macros) - 为仓颉导出宏。
+- [cjbind](https://github.com/cjbind/cjbind) - 自动生成 C 库到仓颉的 FFI 绑定代码。
+- [J2CJ](https://gitcode.com/Cangjie-SIG/j2cj) - 基于 AST 转换的 Java 到 Cangjie 源码转换工具，兼容 Java 生态，简化代码迁移。
 
 ### Editor / IDE
 
@@ -82,6 +106,7 @@
 ### GUI
 
 - [webview-sdk](https://gitcode.com/service/webview-sdk) - 仓颉语言绑定 webview；可以使用任何 web 技术开发你的桌面程序。
+- [CJQT](https://gitcode.com/Cangjie-TPC/CJQT) - 仓颉语言对 Qt 封装库。
 
 ### Job Scheduling
 
@@ -96,27 +121,27 @@
 
 - [charset4cj](https://gitcode.com/Cangjie-TPC/charset4cj) - 常用字符编码集合库。
 - [cjdotenv](https://github.com/gtn1024/cjdotenv) - 仓颉库用于从 .env 加载环境变量。
-- [cjxe](https://github.com/gtn1024/cjxe) - 仓颉的快速命令行参数解析器。
-- [derive_macros](https://gitcode.com/OpenCangjieCommunity/derive_macros) - 为仓颉导出宏。
 - [filetype4cj](https://gitcode.com/Cangjie-SIG/filetype4cj) - 通过检查魔数签名推断文件和 MIME 类型。
 - [is_png_cj](https://gitcode.com/PermissionDog/is-png-cj) - 检测文件是否为 PNG 图像。
 - [snowflake4cj](https://github.com/gtn1024/snowflake4cj) - 仓颉的 Snowflake 算法实现。
-- [terminalcolor](https://gitcode.com/Cangjie-SIG/terminalcolor) - 符合直觉的终端颜色库，看一眼就会使用。
 
 ### Networking
 
 - [ginger](https://gitcode.com/Chemxy/ginger) - 轻量级 HTTP 客户端，支持拦截请求和响应。
 - [httpclient4cj](https://gitcode.com/Cangjie-TPC/httpclient4cj) - 高效的 HTTP 客户端。
 - [hyperion](https://gitcode.com/Cangjie-TPC/hyperion) - 一个用仓颉语言实现的 TCP 通信框架，支持添加自定义编码器和 IoFilter 以处理推送和弹出消息。
+- [feign4cj](https://gitcode.com/Cangjie-SIG/feign4cj) - 基于宏的声明式 HTTP 客户端，受 Feign 启发，通过接口定义 HTTP API。
 
 ### Science and Data Analysis
 
 - [matrix4cj](https://gitcode.com/Cangjie-TPC/matrix4cj) - 用于构建和操作稠密矩阵的线性代数库。
 - [stats4cj](https://gitcode.com/Chemxy/stats4cj) - 由仓颉实现的数学统计库。
+- [cjnum](https://gitcode.com/Cangjie-SIG/cjnum) - 仓颉数值计算库，提供数学函数、科学计算和数值分析功能。
 
 ### Security
 
 - [jwt4cj](https://gitcode.com/Cangjie-TPC/jwt4cj) - 生成和验证 JSON Web Tokens，支持 Payload 验证、HMAC 算法签名和验证、RSA 算法签名和验证，以及 ECDSA 算法签名和验证。
+- [md2_cj](https://gitcode.com/Cangjie-TPC/md2_cj) - 仓颉版 MD2 摘要算法。
 
 ### Web
 
@@ -125,6 +150,7 @@
 - [tea](https://gitcode.com/yishengTH/tea) - 轻量级、函数式、高效的 HTTP Web 框架。
 - [easyapi](https://gitcode.com/OpenCangjieCommunity/easyapi) - 轻量级 Http 服务框架。
 - [fountain](https://gitcode.com/Cangjie-SIG/fountain) - 一个用于服务器应用开发的综合工具库。
+- [mustache-cj](https://gitcode.com/Cangjie-SIG/mustache-cj) - 基于仓颉实现的 Mustache 模板引擎。
 
 ## Resources
 
