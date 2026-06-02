@@ -110,6 +110,7 @@ English | [中文](README.md)
 
 ### Job Scheduling
 
+- [louke](https://github.com/zhh2001/louke) - A lightweight cron job scheduler with cron expressions, predefined schedules, and runtime add/remove.
 - [quartz4cj](https://gitcode.com/Cangjie-TPC/quartz4cj) - Feature-rich open source job scheduling library.
 
 ### Logging

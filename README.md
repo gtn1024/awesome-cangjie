@@ -110,6 +110,7 @@
 
 ### 任务调度
 
+- [louke](https://github.com/zhh2001/louke) - 基于 cron 表达式的轻量定时任务调度库，支持预定义宏与固定间隔，可在运行时增删任务。
 - [quartz4cj](https://gitcode.com/Cangjie-TPC/quartz4cj) - 功能丰富的开源作业调度库。
 
 ### 日志管理
