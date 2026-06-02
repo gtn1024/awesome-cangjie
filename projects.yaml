@@ -512,6 +512,17 @@ projects:
       en: Qt binding library for Cangjie language.
     tags: [qt, gui, desktop, binding]
 
+  - id: louke
+    name:
+      zh: louke
+      en: louke
+    category: job-scheduling
+    repository: https://github.com/zhh2001/louke
+    description:
+      zh: 基于 cron 表达式的轻量定时任务调度库，支持预定义宏与固定间隔，可在运行时增删任务。
+      en: A lightweight cron job scheduler with cron expressions, predefined schedules, and runtime add/remove.
+    tags: [scheduler, cron, job, crontab]
+
   - id: quartz4cj
     name:
       zh: quartz4cj
