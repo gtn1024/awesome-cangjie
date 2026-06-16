@@ -90,12 +90,14 @@
 - [cli-cj](https://gitcode.com/Cangjie-SIG/cli-cj) - 使用仓颉语言编写的命令行框架，旨在简化命令行界面 (CLI) 的创建过程。提供声明式的方式来定义命令、子命令和参数，自动处理输入解析、帮助信息生成和参数验证。
 - [terminalcolor](https://gitcode.com/Cangjie-SIG/terminalcolor) - 符合直觉的终端颜色库，看一眼就会使用。
 - [ansies4cj](https://gitcode.com/Cangjie-SIG/ansies4cj) - ANSI 转义序列库，提供终端颜色、样式、光标控制和屏幕操作功能。
+- [termcolor](https://github.com/gtn1024/termcolor) - 仓颉极简的终端 ANSI 颜色格式化库，零依赖，支持嵌套颜色组合与可禁用颜色。
 
 ### 开发工具
 
 - [derive_macros](https://gitcode.com/OpenCangjieCommunity/derive_macros) - 为仓颉导出宏。
 - [cjbind](https://github.com/cjbind/cjbind) - 自动生成 C 库到仓颉的 FFI 绑定代码。
 - [J2CJ](https://gitcode.com/Cangjie-SIG/j2cj) - 基于 AST 转换的 Java 到 Cangjie 源码转换工具，兼容 Java 生态，简化代码迁移。
+- [cjreleaser](https://github.com/gtn1024/cjreleaser) - 仓颉 monorepo 包自动化发布工具，支持工作区成员发现、依赖拓扑排序、预检、dry-run 与 bundle-only 模式。
 
 ### 编辑器
 
@@ -125,6 +127,7 @@
 - [filetype4cj](https://gitcode.com/Cangjie-SIG/filetype4cj) - 通过检查魔数签名推断文件和 MIME 类型。
 - [is_png_cj](https://gitcode.com/PermissionDog/is-png-cj) - 检测文件是否为 PNG 图像。
 - [snowflake4cj](https://github.com/gtn1024/snowflake4cj) - 仓颉的 Snowflake 算法实现。
+- [cjic](https://github.com/gtn1024/cjic) - 仓颉的依赖注入（DI）/ IoC 容器库，支持基于注解的注入（@Inject、@Named）、模块化绑定、单例与命名绑定。
 
 ### 网络编程
 
@@ -132,6 +135,7 @@
 - [httpclient4cj](https://gitcode.com/Cangjie-TPC/httpclient4cj) - 高效的 HTTP 客户端。
 - [hyperion](https://gitcode.com/Cangjie-TPC/hyperion) - 一个用仓颉语言实现的 TCP 通信框架，支持添加自定义编码器和 IoFilter 以处理推送和弹出消息。
 - [feign4cj](https://gitcode.com/Cangjie-SIG/feign4cj) - 基于宏的声明式 HTTP 客户端，受 Feign 启发，通过接口定义 HTTP API。
+- [zmq4cj](https://github.com/gtn1024/zmq4cj) - ZeroMQ (libzmq v4.3.5) 的仓颉绑定，静态链接，运行时零外部依赖，支持 REQ/REP、PUB/SUB、PUSH/PULL 等核心模式与内置代理。
 
 ### 科学计算
 

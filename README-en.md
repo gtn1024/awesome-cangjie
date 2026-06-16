@@ -90,12 +90,14 @@ English | [中文](README.md)
 - [cli-cj](https://gitcode.com/Cangjie-SIG/cli-cj) - Command-line framework written in Cangjie, designed to simplify the creation of CLI interfaces. Provides a declarative way to define commands, subcommands, and parameters, automatically handling input parsing, help generation, and parameter validation.
 - [terminalcolor](https://gitcode.com/Cangjie-SIG/terminalcolor) - Intuitive terminal color library that's easy to use.
 - [ansies4cj](https://gitcode.com/Cangjie-SIG/ansies4cj) - ANSI escape sequence library, providing terminal colors, styles, cursor control, and screen operations.
+- [termcolor](https://github.com/gtn1024/termcolor) - The tiniest terminal output formatting library with ANSI colors for Cangjie, zero dependencies, supporting nested color composition and disableable colors.
 
 ### Developer Tools
 
 - [derive_macros](https://gitcode.com/OpenCangjieCommunity/derive_macros) - Derive macros for Cangjie.
 - [cjbind](https://github.com/cjbind/cjbind) - Automatically generate FFI binding code from C libraries to Cangjie.
 - [J2CJ](https://gitcode.com/Cangjie-SIG/j2cj) - Java to Cangjie source code transformation tool based on AST conversion, compatible with Java ecosystem, simplifying code migration.
+- [cjreleaser](https://github.com/gtn1024/cjreleaser) - Automated release tool for Cangjie monorepo packages, supporting workspace member discovery, dependency topological sorting, pre-flight checks, dry-run and bundle-only modes.
 
 ### Editor / IDE
 
@@ -125,6 +127,7 @@ English | [中文](README.md)
 - [filetype4cj](https://gitcode.com/Cangjie-SIG/filetype4cj) - Infer file and MIME types by checking magic number signatures.
 - [is_png_cj](https://gitcode.com/PermissionDog/is-png-cj) - Detect whether a file is a PNG image.
 - [snowflake4cj](https://github.com/gtn1024/snowflake4cj) - Snowflake algorithm implementation for Cangjie.
+- [cjic](https://github.com/gtn1024/cjic) - Dependency injection (DI) / IoC container library for Cangjie, supporting annotation-based injection (@Inject, @Named), module-based binding, singleton and named bindings.
 
 ### Networking
 
@@ -132,6 +135,7 @@ English | [中文](README.md)
 - [httpclient4cj](https://gitcode.com/Cangjie-TPC/httpclient4cj) - Efficient HTTP client.
 - [hyperion](https://gitcode.com/Cangjie-TPC/hyperion) - A TCP communication framework implemented in Cangjie, supporting custom encoders and IoFilters for handling message push and pop.
 - [feign4cj](https://gitcode.com/Cangjie-SIG/feign4cj) - Macro-based declarative HTTP client inspired by Feign, defining HTTP APIs through interfaces.
+- [zmq4cj](https://github.com/gtn1024/zmq4cj) - ZeroMQ (libzmq v4.3.5) bindings for Cangjie, static linking, zero external runtime dependencies, supporting core patterns like REQ/REP, PUB/SUB, PUSH/PULL and built-in proxy.
 
 ### Science and Data Analysis
 
