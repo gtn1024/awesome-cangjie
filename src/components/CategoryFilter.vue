@@ -23,17 +23,19 @@ function getText(obj: { zh: string, en: string }) {
 </script>
 
 <template>
-  <div class="flex flex-wrap gap-2">
+  <div class="flex flex-wrap gap-1.5">
     <button
-      class="px-4 py-2 rounded-lg border-2 transition-all duration-300" :class="[
-        selectedCategory === 'all'
-          ? 'border-cyan-500 bg-gradient-to-r from-cyan-50 to-blue-50 dark:from-cyan-900/30 dark:to-blue-900/30 text-cyan-700 dark:text-cyan-300'
-          : 'border-gray-200 dark:border-dark-border hover:border-cyan-300 dark:hover:border-cyan-700',
-      ]"
+      class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm transition-colors duration-150 border"
+      :class="selectedCategory === 'all'
+        ? 'border-blue-600 bg-blue-600 text-white'
+        : 'border-gray-200 dark:border-dark-border text-gray-600 dark:text-gray-400 hover:border-gray-300 dark:hover:border-dark-elevated hover:text-gray-900 dark:hover:text-gray-100'"
       @click="selectedCategory = 'all'"
     >
       {{ locale === 'zh' ? '全部' : 'All' }}
-      <span class="ml-1 px-2 py-0.5 rounded-full bg-gray-200 dark:bg-gray-700 text-xs">
+      <span
+        class="font-mono tabular-nums text-xs"
+        :class="selectedCategory === 'all' ? 'text-blue-100' : 'text-gray-400 dark:text-gray-600'"
+      >
         {{ categories.reduce((sum, cat) => sum + (stats.get(cat.id) || 0), 0) }}
       </span>
     </button>
@@ -41,16 +43,17 @@ function getText(obj: { zh: string, en: string }) {
     <button
       v-for="category in categories"
       :key="category.id"
-      class="px-4 py-2 rounded-lg border-2 transition-all duration-300" :class="[
-        selectedCategory === category.id
-          ? 'border-cyan-500 bg-gradient-to-r from-cyan-50 to-blue-50 dark:from-cyan-900/30 dark:to-blue-900/30 text-cyan-700 dark:text-cyan-300'
-          : 'border-gray-200 dark:border-dark-border hover:border-cyan-300 dark:hover:border-cyan-700',
-      ]"
+      class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm transition-colors duration-150 border"
+      :class="selectedCategory === category.id
+        ? 'border-blue-600 bg-blue-600 text-white'
+        : 'border-gray-200 dark:border-dark-border text-gray-600 dark:text-gray-400 hover:border-gray-300 dark:hover:border-dark-elevated hover:text-gray-900 dark:hover:text-gray-100'"
       @click="selectedCategory = category.id"
     >
-      <span class="mr-1">{{ category.icon }}</span>
       {{ getText(category.name) }}
-      <span class="ml-1 px-2 py-0.5 rounded-full bg-gray-200 dark:bg-gray-700 text-xs">
+      <span
+        class="font-mono tabular-nums text-xs"
+        :class="selectedCategory === category.id ? 'text-blue-100' : 'text-gray-400 dark:text-gray-600'"
+      >
         {{ stats.get(category.id) || 0 }}
       </span>
     </button>

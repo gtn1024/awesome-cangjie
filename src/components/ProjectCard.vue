@@ -23,10 +23,19 @@ defineProps<{
 }>()
 
 const locale = inject<Ref<'zh' | 'en'>>('locale')
-const t = inject<(zh: string, en: string) => string>('t')!
 
 function getText(obj: { zh: string, en: string }) {
   return locale?.value === 'zh' ? obj.zh : obj.en
+}
+
+// Derive a clean host label (github / gitcode) from the repository URL.
+function hostFrom(url: string): string {
+  try {
+    return new URL(url).host.replace(/^www\./, '')
+  }
+  catch {
+    return 'Repository'
+  }
 }
 </script>
 
@@ -35,43 +44,35 @@ function getText(obj: { zh: string, en: string }) {
     :href="project.repository"
     target="_blank"
     rel="noopener noreferrer"
-    class="card p-6 block hover:-translate-y-1 transition-transform duration-300"
+    class="group relative flex flex-col card card-interactive p-5"
   >
-    <div class="flex items-start justify-between mb-3">
-      <h4 class="text-lg font-semibold text-gray-800 dark:text-gray-200 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors">
+    <div class="flex items-start justify-between gap-3 mb-2">
+      <h4 class="text-[15px] font-semibold text-gray-900 dark:text-gray-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
         {{ getText(project.name) }}
       </h4>
-      <span v-if="category" class="text-2xl">{{ category.icon }}</span>
-    </div>
-
-    <p class="text-gray-600 dark:text-gray-400 text-sm mb-4 line-clamp-2">
-      {{ getText(project.description) }}
-    </p>
-
-    <div class="flex flex-wrap gap-2">
-      <span
-        v-for="tag in project.tags"
-        :key="tag"
-        class="px-2 py-1 text-xs rounded-full bg-gradient-to-r from-cyan-50 to-blue-50 dark:from-cyan-900/30 dark:to-blue-900/30 text-cyan-700 dark:text-cyan-300 border border-cyan-200 dark:border-cyan-700"
-      >
-        {{ tag }}
+      <span v-if="category" class="shrink-0 text-xs font-mono text-gray-400 dark:text-gray-600 pt-0.5">
+        {{ getText(category.name) }}
       </span>
     </div>
 
-    <div class="mt-4 flex items-center text-sm text-gray-500 dark:text-gray-400">
-      <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-      </svg>
-      {{ t('代码仓库', 'Code Repository') }}
+    <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2 mb-4 flex-1">
+      {{ getText(project.description) }}
+    </p>
+
+    <div class="flex flex-wrap items-center gap-x-2 gap-y-1.5">
+      <span
+        v-for="tag in project.tags.slice(0, 4)"
+        :key="tag"
+        class="text-xs text-gray-500 dark:text-gray-500"
+      >
+        <span class="text-gray-300 dark:text-gray-700 mr-0.5">#</span>{{ tag }}
+      </span>
+      <span class="ml-auto inline-flex items-center gap-1 text-xs text-gray-400 dark:text-gray-600 font-mono">
+        {{ hostFrom(project.repository) }}
+        <svg class="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M7 17 17 7M7 7h10v10" />
+        </svg>
+      </span>
     </div>
   </a>
 </template>
-
-<style scoped>
-.line-clamp-2 {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-</style>

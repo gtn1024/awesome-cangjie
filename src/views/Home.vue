@@ -73,61 +73,33 @@ const categoryStats = computed(() => {
   })
   return stats
 })
+
+const totalProjects = computed(() => data.value.projects.length)
 </script>
 
 <template>
-  <div class="container mx-auto px-4 py-8">
-    <!-- Hero Section -->
-    <section class="text-center mb-12">
-      <h2 class="text-4xl md:text-5xl font-bold mb-4 gradient-text animate-gradient-x">
-        {{ t('探索仓颉生态系统', 'Explore Cangjie Ecosystem') }}
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
+    <!-- Hero -->
+    <section class="mb-10">
+      <h2 class="text-3xl sm:text-4xl font-semibold tracking-tight text-gray-900 dark:text-gray-50">
+        {{ t('探索仓颉生态系统', 'Explore the Cangjie ecosystem') }}
       </h2>
-      <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-        {{ t('发现精选的仓颉框架、库和资源，加速你的开发之旅', 'Discover curated Cangjie frameworks, libraries, and resources to accelerate your development') }}
+      <p class="mt-3 text-base sm:text-lg text-gray-500 dark:text-gray-400 max-w-2xl">
+        {{ t('精选的仓颉框架、库和资源，帮你快速找到趁手的工具。', 'A curated index of Cangjie frameworks, libraries, and resources to speed up your work.') }}
       </p>
-    </section>
-
-    <!-- Stats -->
-    <section class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-      <div class="card p-6 text-center">
-        <div class="text-3xl font-bold gradient-text">
-          {{ data.projects.length }}
-        </div>
-        <div class="text-sm text-gray-600 dark:text-gray-400 mt-1">
-          {{ t('项目', 'Projects') }}
-        </div>
-      </div>
-      <div class="card p-6 text-center">
-        <div class="text-3xl font-bold gradient-text">
-          {{ data.categories.length }}
-        </div>
-        <div class="text-sm text-gray-600 dark:text-gray-400 mt-1">
-          {{ t('分类', 'Categories') }}
-        </div>
-      </div>
-      <div class="card p-6 text-center">
-        <div class="text-3xl font-bold gradient-text">
-          Open Source
-        </div>
-        <div class="text-sm text-gray-600 dark:text-gray-400 mt-1">
-          {{ t('开源社区', 'Community') }}
-        </div>
-      </div>
-      <div class="card p-6 text-center">
-        <div class="text-3xl font-bold gradient-text">
-          Growing
-        </div>
-        <div class="text-sm text-gray-600 dark:text-gray-400 mt-1">
-          {{ t('持续增长', 'Growing') }}
-        </div>
-      </div>
+      <p class="mt-4 text-sm text-gray-500 dark:text-gray-500">
+        <span class="font-mono tabular-nums text-gray-900 dark:text-gray-100">{{ totalProjects }}</span>
+        {{ t(' 个项目 · ', ' projects · ') }}
+        <span class="font-mono tabular-nums text-gray-900 dark:text-gray-100">{{ data.categories.length }}</span>
+        {{ t(' 个分类', ' categories') }}
+      </p>
     </section>
 
     <!-- Search and Filter -->
     <section class="mb-8 space-y-4">
       <SearchBar
         v-model="searchQuery"
-        :placeholder="t('搜索项目名称、描述或标签...', 'Search project names, descriptions, or tags...')"
+        :placeholder="t('搜索项目名称、描述或标签…', 'Search by name, description, or tag…')"
       />
       <CategoryFilter
         v-model="selectedCategory"
@@ -138,30 +110,32 @@ const categoryStats = computed(() => {
 
     <!-- Results -->
     <section>
-      <div class="flex items-center justify-between mb-6">
-        <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-200">
+      <div class="flex items-center justify-between mb-4 pb-2 border-b border-gray-200 dark:border-dark-border">
+        <h3 class="text-sm font-medium text-gray-900 dark:text-gray-100">
           <template v-if="selectedCategory === 'all'">
-            {{ t('所有项目', 'All Projects') }}
+            {{ t('所有项目', 'All projects') }}
           </template>
           <template v-else>
             {{ getText(data.categories.find(c => c.id === selectedCategory)?.name || { zh: '', en: '' }) }}
           </template>
-          <span class="text-sm font-normal text-gray-500 dark:text-gray-400 ml-2">
-            ({{ filteredProjects.length }} {{ t('个项目', 'projects') }})
-          </span>
         </h3>
+        <span class="text-sm text-gray-500 dark:text-gray-500 font-mono tabular-nums">
+          {{ filteredProjects.length }}
+        </span>
       </div>
 
-      <div v-if="filteredProjects.length === 0" class="text-center py-12">
-        <div class="text-6xl mb-4">
-          🔍
-        </div>
+      <div v-if="filteredProjects.length === 0" class="text-center py-20">
         <p class="text-gray-500 dark:text-gray-400">
           {{ t('未找到匹配的项目', 'No matching projects found') }}
         </p>
+        <p v-if="searchQuery || selectedCategory !== 'all'" class="mt-2 text-sm text-gray-400 dark:text-gray-600">
+          <button class="hover:text-blue-600 dark:hover:text-blue-400" @click="searchQuery = ''; selectedCategory = 'all'">
+            {{ t('清除筛选条件', 'Clear filters') }}
+          </button>
+        </p>
       </div>
 
-      <div v-else class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div v-else class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <ProjectCard
           v-for="project in filteredProjects"
           :key="getText(project.name)"
