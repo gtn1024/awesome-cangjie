@@ -161,6 +161,15 @@ categories:
       zh: 安全加密相关
       en: Security and encryption related
 
+  - id: testing
+    name:
+      zh: 测试
+      en: Testing
+    icon: 🧪
+    description:
+      zh: 测试框架与工具
+      en: Testing frameworks and tools
+
   - id: web
     name:
       zh: Web 开发
@@ -885,6 +894,17 @@ projects:
       zh: 仓颉 monorepo 包自动化发布工具，支持工作区成员发现、依赖拓扑排序、预检、dry-run 与 bundle-only 模式。
       en: Automated release tool for Cangjie monorepo packages, supporting workspace member discovery, dependency topological sorting, pre-flight checks, dry-run and bundle-only modes.
     tags: [release, publish, monorepo, ci]
+
+  - id: podtest
+    name:
+      zh: PodTest
+      en: PodTest
+    category: testing
+    repository: https://github.com/gtn1024/podtest
+    description:
+      zh: 仓颉的容器化测试库，灵感来自 Testcontainers，支持 Docker/Podman 自动检测、流式构建器 API、多种等待策略与 PostgreSQL/MySQL 模块。
+      en: Containerized testing library for Cangjie inspired by Testcontainers, with Docker/Podman auto-detection, fluent builder API, multiple wait strategies and PostgreSQL/MySQL modules.
+    tags: [testing, testcontainers, docker, podman]
 
   - id: cjic
     name:
