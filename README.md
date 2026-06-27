@@ -27,6 +27,7 @@
   - [网络编程](#网络编程)
   - [科学计算](#科学计算)
   - [安全加密](#安全加密)
+  - [测试](#测试)
   - [Web 开发](#web-开发)
 - [Resources](#resources)
 
@@ -147,6 +148,10 @@
 
 - [jwt4cj](https://gitcode.com/Cangjie-TPC/jwt4cj) - 生成和验证 JSON Web Tokens，支持 Payload 验证、HMAC 算法签名和验证、RSA 算法签名和验证，以及 ECDSA 算法签名和验证。
 - [md2_cj](https://gitcode.com/Cangjie-TPC/md2_cj) - 仓颉版 MD2 摘要算法。
+
+### 测试
+
+- [PodTest](https://github.com/gtn1024/podtest) - 仓颉的容器化测试库，灵感来自 Testcontainers，支持 Docker/Podman 自动检测、流式构建器 API、多种等待策略与 PostgreSQL/MySQL 模块。
 
 ### Web 开发
 

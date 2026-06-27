@@ -27,6 +27,7 @@ English | [中文](README.md)
   - [Networking](#networking)
   - [Science and Data Analysis](#science-and-data-analysis)
   - [Security](#security)
+  - [Testing](#testing)
   - [Web](#web)
 - [Resources](#resources)
 
@@ -147,6 +148,10 @@ English | [中文](README.md)
 
 - [jwt4cj](https://gitcode.com/Cangjie-TPC/jwt4cj) - Generate and verify JSON Web Tokens, supporting payload validation, HMAC signing and verification, RSA signing and verification, and ECDSA signing and verification.
 - [md2_cj](https://gitcode.com/Cangjie-TPC/md2_cj) - Cangjie version of MD2 digest algorithm.
+
+### Testing
+
+- [PodTest](https://github.com/gtn1024/podtest) - Containerized testing library for Cangjie inspired by Testcontainers, with Docker/Podman auto-detection, fluent builder API, multiple wait strategies and PostgreSQL/MySQL modules.
 
 ### Web
 
