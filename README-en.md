@@ -98,6 +98,7 @@ English | [中文](README.md)
 - [derive_macros](https://gitcode.com/OpenCangjieCommunity/derive_macros) - Derive macros for Cangjie.
 - [cjbind](https://github.com/cjbind/cjbind) - Automatically generate FFI binding code from C libraries to Cangjie.
 - [J2CJ](https://gitcode.com/Cangjie-SIG/j2cj) - Java to Cangjie source code transformation tool based on AST conversion, compatible with Java ecosystem, simplifying code migration.
+- [CodeLattice](https://gitcode.com/aiulms/codelattice) - A local code-graph engine written in Rust that statically analyzes project structure, symbols, and call relations for Cangjie and 7 other languages, exposing impact analysis and change-review context via CLI, JSON, and MCP tools for AI coding assistants.
 - [cjreleaser](https://github.com/gtn1024/cjreleaser) - Automated release tool for Cangjie monorepo packages, supporting workspace member discovery, dependency topological sorting, pre-flight checks, dry-run and bundle-only modes.
 
 ### Editor / IDE

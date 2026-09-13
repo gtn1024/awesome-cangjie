@@ -98,6 +98,7 @@
 - [derive_macros](https://gitcode.com/OpenCangjieCommunity/derive_macros) - 为仓颉导出宏。
 - [cjbind](https://github.com/cjbind/cjbind) - 自动生成 C 库到仓颉的 FFI 绑定代码。
 - [J2CJ](https://gitcode.com/Cangjie-SIG/j2cj) - 基于 AST 转换的 Java 到 Cangjie 源码转换工具，兼容 Java 生态，简化代码迁移。
+- [CodeLattice](https://gitcode.com/aiulms/codelattice) - 用 Rust 编写的本地代码图谱引擎，静态分析仓颉等 8 种语言的项目结构、符号与调用关系，提供影响面分析与变更审查上下文，可通过 CLI、JSON 与 MCP 工具供 AI 编程助手使用。
 - [cjreleaser](https://github.com/gtn1024/cjreleaser) - 仓颉 monorepo 包自动化发布工具，支持工作区成员发现、依赖拓扑排序、预检、dry-run 与 bundle-only 模式。
 
 ### 编辑器
