@@ -697,6 +697,17 @@ projects:
       en: Java to Cangjie source code transformation tool based on AST conversion, compatible with Java ecosystem, simplifying code migration.
     tags: [java, transpiler, migration, ast]
 
+  - id: codelattice
+    name:
+      zh: CodeLattice
+      en: CodeLattice
+    category: devtools
+    repository: https://gitcode.com/aiulms/codelattice
+    description:
+      zh: 用 Rust 编写的本地代码图谱引擎，静态分析仓颉等 8 种语言的项目结构、符号与调用关系，提供影响面分析与变更审查上下文，可通过 CLI、JSON 与 MCP 工具供 AI 编程助手使用。
+      en: A local code-graph engine written in Rust that statically analyzes project structure, symbols, and call relations for Cangjie and 7 other languages, exposing impact analysis and change-review context via CLI, JSON, and MCP tools for AI coding assistants.
+    tags: [static-analysis, code-graph, mcp, ai]
+
   - id: zip4cj
     name:
       zh: zip4cj
