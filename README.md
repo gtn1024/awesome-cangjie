@@ -111,6 +111,7 @@
 
 - [webview-sdk](https://gitcode.com/service/webview-sdk) - 仓颉语言绑定 webview；可以使用任何 web 技术开发你的桌面程序。
 - [CJQT](https://gitcode.com/Cangjie-TPC/CJQT) - 仓颉语言对 Qt 封装库。
+- [CJGUI](https://gitcode.com/aiulms/cjgui) - 面向人和 AI 共同工作的仓颉自绘 GUI 框架：仓颉组件与布局、Metal 场景合成、公开对象与授权动作 API 支持人机接续编辑同一份应用状态（开发预览，macOS 优先）。
 
 ### 任务调度
 
