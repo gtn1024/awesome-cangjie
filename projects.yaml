@@ -521,6 +521,17 @@ projects:
       en: Qt binding library for Cangjie language.
     tags: [qt, gui, desktop, binding]
 
+  - id: cjgui
+    name:
+      zh: CJGUI
+      en: CJGUI
+    category: gui
+    repository: https://gitcode.com/aiulms/cjgui
+    description:
+      zh: 面向人和 AI 共同工作的仓颉自绘 GUI 框架：仓颉组件与布局、Metal 场景合成、公开对象与授权动作 API 支持人机接续编辑同一份应用状态（开发预览，macOS 优先）。
+      en: A self-drawn GUI framework for Cangjie where humans and AI work together — Cangjie components and layout, Metal scene composition, and public object/action APIs letting humans and external agents co-edit the same application state (preview, macOS first).
+    tags: [gui, metal, desktop, human-ai-collaboration, self-drawn]
+
   - id: louke
     name:
       zh: louke
