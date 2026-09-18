@@ -2,7 +2,7 @@
 
 精选的仓颉框架、库、软件和资源列表。
 
-[English](README-en.md) | 中文
+[English](README-en.md) | 中文 | [Contributing](contributing.md)
 
 ---
 
