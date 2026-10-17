@@ -45,6 +45,7 @@ English | [中文](README.md)
 
 - [CangjieMagic](https://gitcode.com/Cangjie-TPC/CangjieMagic) - LLM Agent development framework built with Cangjie. Main features: Agent DSL, MCP protocol support, modular invocation, intelligent task planning.
 - [CangChain](https://gitcode.com/Cangjie-TPC/CangChain) - Multi-agent collaboration framework based on Cangjie.
+- [cjh](https://atomgit.com/qq8864/cjh) - A terminal coding agent harness written from scratch in Cangjie: one static binary with zero dependencies, a TUI plus a built-in web UI, tool execution with approvals, and a plugin trust chain.
 
 ### Collection
 

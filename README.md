@@ -45,6 +45,7 @@
 
 - [CangjieMagic](https://gitcode.com/Cangjie-TPC/CangjieMagic) - LLM Agent 开发框架基于仓颉编程语言构建，主要特性包括：Agent DSL、支持MCP协议、支持模块化调用、支持智能任务规划。
 - [CangChain](https://gitcode.com/Cangjie-TPC/CangChain) - 基于仓颉的多智能体协同框架。
+- [cjh](https://atomgit.com/qq8864/cjh) - 用仓颉从零实现的终端编码代理（Coding Agent Harness）：静态单二进制零依赖，含 TUI 与内置 Web 界面、工具调用与审批、插件信任链。
 
 ### 数据集合
 

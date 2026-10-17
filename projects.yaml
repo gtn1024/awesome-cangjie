@@ -257,6 +257,17 @@ projects:
       en: Multi-agent collaboration framework based on Cangjie.
     tags: [ai, agent, multi-agent, framework]
 
+  - id: cjh
+    name:
+      zh: cjh
+      en: cjh
+    category: ai
+    repository: https://atomgit.com/qq8864/cjh
+    description:
+      zh: 用仓颉从零实现的终端编码代理（Coding Agent Harness）：静态单二进制零依赖，含 TUI 与内置 Web 界面、工具调用与审批、插件信任链。
+      en: 'A terminal coding agent harness written from scratch in Cangjie: one static binary with zero dependencies, a TUI plus built-in web UI, tool execution with approvals, and a plugin trust chain.'
+    tags: [ai, agent, coding-agent, cli]
+
   - id: deque4cj
     name:
       zh: deque4cj
