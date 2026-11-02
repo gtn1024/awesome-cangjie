@@ -550,9 +550,9 @@ projects:
     category: gui
     repository: https://atomgit.com/qq8864/cj-tauri
     description:
-      zh: 用仓颉写桌面应用的类 Tauri 混合框架：后端静态编译 + 系统 WebView（WebView2 / WebKitGTK）前端，含 IPC 双向桥、能力白名单与插件体系，产物几 MB 级，Windows / Linux 已实机跑通。
-      en: A Tauri-like hybrid desktop framework for Cangjie — a statically compiled Cangjie backend plus a system WebView front end (WebView2 / WebKitGTK), with a bidirectional IPC bridge, a capability allowlist model and a plugin system; multi-megabyte binaries, verified on Windows and Linux.
-    tags: [tauri, webview, desktop, ipc, plugin-system, cross-platform]
+      zh: 用仓颉写桌面应用的类 Tauri 混合框架：后端静态编译 + 系统 WebView（WebView2 / WebKitGTK / ArkWeb）前端，含 IPC 双向桥、能力白名单与插件体系（14 个官方插件），产物几 MB 级，Windows / Linux / 鸿蒙 PC 均已实机跑通，可 `npx cj-tauri create` 起工程。
+      en: A Tauri-like hybrid desktop framework for Cangjie — a statically compiled Cangjie backend plus a system WebView front end (WebView2 / WebKitGTK / ArkWeb), with a bidirectional IPC bridge, a capability allowlist model and a plugin system (14 official plugins); multi-megabyte binaries, verified on Windows, Linux and HarmonyOS PC. Scaffold with `npx cj-tauri create`.
+    tags: [tauri, webview, desktop, ipc, plugin-system, cross-platform, harmonyos]
 
   - id: louke
     name:
